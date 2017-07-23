@@ -1,0 +1,3805 @@
+[gd_scene load_steps=164 format=1]
+
+[ext_resource path="res://scripts/Pinball.gd" type="Script" id=1]
+[ext_resource path="res://elements/fond1.png" type="Texture" id=2]
+[ext_resource path="res://fonts/scoreboard.fnt" type="BitmapFont" id=3]
+[ext_resource path="res://scenes/Clapet.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/Pivot.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/Explosion.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/Bonus.tscn" type="PackedScene" id=7]
+[ext_resource path="res://elements/x1.png" type="Texture" id=8]
+[ext_resource path="res://elements/x3.png" type="Texture" id=9]
+[ext_resource path="res://elements/x5.png" type="Texture" id=10]
+[ext_resource path="res://elements/special.png" type="Texture" id=11]
+[ext_resource path="res://elements/special_n.png" type="Texture" id=12]
+[ext_resource path="res://elements/boop.png" type="Texture" id=13]
+[ext_resource path="res://fonts/Impact.fnt" type="BitmapFont" id=14]
+[ext_resource path="res://elements/block.png" type="Texture" id=15]
+[ext_resource path="res://scenes/Ball.tscn" type="PackedScene" id=16]
+[ext_resource path="res://scenes/Launcher.tscn" type="PackedScene" id=17]
+[ext_resource path="res://elements/cache2.png" type="Texture" id=18]
+[ext_resource path="res://scenes/FlipperG.tscn" type="PackedScene" id=19]
+[ext_resource path="res://scenes/FlipperD.tscn" type="PackedScene" id=20]
+[ext_resource path="res://elements/arrierecache2.png" type="Texture" id=21]
+[ext_resource path="res://elements/S.png" type="Texture" id=22]
+[ext_resource path="res://elements/Q.png" type="Texture" id=23]
+[ext_resource path="res://fonts/OpenSans18.fnt" type="BitmapFont" id=24]
+[ext_resource path="res://scripts/Options.gd" type="Script" id=25]
+[ext_resource path="res://fonts/OpenSans20.fnt" type="BitmapFont" id=26]
+[ext_resource path="res://fonts/OpenSans15.fnt" type="BitmapFont" id=27]
+[ext_resource path="res://fonts/OpenSans.fnt" type="BitmapFont" id=28]
+
+[sub_resource type="ConvexPolygonShape2D" id=136]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -162.892, 322.107, -162.859, 573.453, -170.292, 573.198, -170.315, 0.595773 )
+
+[sub_resource type="ConvexPolygonShape2D" id=137]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 238.866, 573.613, 228.911, 573.726, 229.29, 88.6416, 238.79, 0.15595 )
+
+[sub_resource type="ConvexPolygonShape2D" id=138]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 238.79, 0.15595, 229.29, 88.6416, 228.59, 80.25 )
+
+[sub_resource type="ConvexPolygonShape2D" id=139]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 238.79, 0.15595, 228.59, 80.25, 226.143, 72.383 )
+
+[sub_resource type="ConvexPolygonShape2D" id=140]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 238.79, 0.15595, 226.143, 72.383, 222.122, 61.1942 )
+
+[sub_resource type="ConvexPolygonShape2D" id=141]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 238.79, 0.15595, 222.122, 61.1942, 216.877, 52.1034 )
+
+[sub_resource type="ConvexPolygonShape2D" id=142]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 238.79, 0.15595, 216.877, 52.1034, 210.409, 43.0126 )
+
+[sub_resource type="ConvexPolygonShape2D" id=143]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 238.79, 0.15595, 210.409, 43.0126, 200.968, 33.9217 )
+
+[sub_resource type="ConvexPolygonShape2D" id=144]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -153.787, 211.304, -112.527, 291.307, -162.892, 322.107 )
+
+[sub_resource type="ConvexPolygonShape2D" id=145]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 238.79, 0.15595, 200.968, 33.9217, 188.381, 24.4812 )
+
+[sub_resource type="ConvexPolygonShape2D" id=146]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 238.79, 0.15595, 188.381, 24.4812, 176.843, 16.6142 )
+
+[sub_resource type="ConvexPolygonShape2D" id=147]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 238.79, 0.15595, 176.843, 16.6142, 166.528, 11.7191 )
+
+[sub_resource type="ConvexPolygonShape2D" id=148]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 238.79, 0.15595, 166.528, 11.7191, 151.843, 6.64919 )
+
+[sub_resource type="ConvexPolygonShape2D" id=149]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -155.337, 207.042, -153.787, 211.304, -162.892, 322.107 )
+
+[sub_resource type="ConvexPolygonShape2D" id=150]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 238.79, 0.15595, 151.843, 6.64919, 138.556, 3.852 )
+
+[sub_resource type="ConvexPolygonShape2D" id=151]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -25.7972, 12.071, -33.1656, 14.6217, -44.0295, 17.928, -57.946, 18.5372, -129.099, 19.0617, -170.315, 0.595773, -14.2721, 7.72551 )
+
+[sub_resource type="ConvexPolygonShape2D" id=152]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -156.499, 200.65, -155.337, 207.042, -162.892, 322.107 )
+
+[sub_resource type="ConvexPolygonShape2D" id=153]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -156.499, 200.65, -162.892, 322.107, -170.315, 0.595773, -156.887, 194.258 )
+
+[sub_resource type="ConvexPolygonShape2D" id=154]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -157.071, 41.4391, -156.887, 194.258, -170.315, 0.595773 )
+
+[sub_resource type="ConvexPolygonShape2D" id=155]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -153.924, 35.1455, -157.071, 41.4391, -170.315, 0.595773 )
+
+[sub_resource type="ConvexPolygonShape2D" id=156]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -149.554, 28.8518, -153.924, 35.1455, -170.315, 0.595773 )
+
+[sub_resource type="ConvexPolygonShape2D" id=157]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -144.134, 24.4812, -149.554, 28.8518, -170.315, 0.595773 )
+
+[sub_resource type="ConvexPolygonShape2D" id=158]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -136.966, 21.1596, -144.134, 24.4812, -170.315, 0.595773 )
+
+[sub_resource type="ConvexPolygonShape2D" id=159]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -129.099, 19.0617, -136.966, 21.1596, -170.315, 0.595773 )
+
+[sub_resource type="ConvexPolygonShape2D" id=160]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -4.06958, 4.41914, -14.2721, 7.72551, -170.315, 0.595773 )
+
+[sub_resource type="ConvexPolygonShape2D" id=161]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 4.71594, 2.81318, -4.06958, 4.41914, -170.315, 0.595773, 13.0325, 1.22964 )
+
+[sub_resource type="ConvexPolygonShape2D" id=162]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 13.0325, 1.22964, -170.315, 0.595773, 238.79, 0.15595, 23.2317, 1.20723 )
+
+[sub_resource type="ConvexPolygonShape2D" id=163]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 116.528, 1.05482, 23.2317, 1.20723, 238.79, 0.15595 )
+
+[sub_resource type="ConvexPolygonShape2D" id=164]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 126.318, 1.92894, 116.528, 1.05482, 238.79, 0.15595 )
+
+[sub_resource type="ConvexPolygonShape2D" id=165]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 126.318, 1.92894, 238.79, 0.15595, 138.556, 3.852 )
+
+[sub_resource type="ConvexPolygonShape2D" id=166]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 315.219, 63.9449, 317.232, 61.0977, 319.316, 59.5005, 321.885, 59.1533, 321.79, 188.207, 315.221, 197.105 )
+
+[sub_resource type="ConvexPolygonShape2D" id=167]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 315.221, 197.105, 321.79, 188.207, 323.585, 195.197, 316.235, 203.002 )
+
+[sub_resource type="ConvexPolygonShape2D" id=168]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 418.903, 101.674, 421.17, 92.1328, 425.516, 81.8358, 433.829, 70.6886, 441.387, 70.7831, 441.764, 121.89, 430.05, 146.263 )
+
+[sub_resource type="ConvexPolygonShape2D" id=169]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 318.769, 208.3, 316.235, 203.002, 323.585, 195.197, 327.08, 201.149, 353.874, 255.936 )
+
+[sub_resource type="ConvexPolygonShape2D" id=170]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 353.874, 255.936, 327.08, 201.149, 330.67, 204.455 )
+
+[sub_resource type="ConvexPolygonShape2D" id=171]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 353.874, 255.936, 330.67, 204.455, 335.771, 207.95 )
+
+[sub_resource type="ConvexPolygonShape2D" id=172]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 353.874, 255.936, 335.771, 207.95, 340.306, 208.706 )
+
+[sub_resource type="ConvexPolygonShape2D" id=173]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 369.445, 259.207, 360.093, 258.792, 353.874, 255.936, 340.306, 208.706, 403.599, 209.084, 418.154, 235.31 )
+
+[sub_resource type="ConvexPolygonShape2D" id=174]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 427.71, 222.735, 425.523, 226.902, 422.216, 231.625, 418.154, 235.31, 403.599, 209.084, 408.795, 207.761, 428.87, 217.979 )
+
+[sub_resource type="ConvexPolygonShape2D" id=175]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 428.87, 217.979, 408.795, 207.761, 414.085, 203.699 )
+
+[sub_resource type="ConvexPolygonShape2D" id=176]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 428.87, 217.979, 414.085, 203.699, 417.864, 197.937 )
+
+[sub_resource type="ConvexPolygonShape2D" id=177]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 419.187, 192.458, 418.903, 101.674, 430.05, 146.263, 428.87, 217.979 )
+
+[sub_resource type="ConvexPolygonShape2D" id=178]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 428.87, 217.979, 417.864, 197.937, 419.187, 192.458 )
+
+[sub_resource type="ConvexPolygonShape2D" id=179]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 350.229, 71.4383, 381.799, 39.8468, 386.889, 39.6772, 391.131, 39.9034, 417.036, 52.856, 418.507, 55.175, 419.186, 58.6818, 418.394, 61.9058, 408.269, 77.0642 )
+
+[sub_resource type="ConvexPolygonShape2D" id=180]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 350.229, 71.4383, 408.269, 77.0642, 404.423, 84.9263 )
+
+[sub_resource type="ConvexPolygonShape2D" id=181]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 350.229, 71.4383, 404.423, 84.9263, 402.613, 91.9399 )
+
+[sub_resource type="ConvexPolygonShape2D" id=182]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 344.943, 82.5217, 346.477, 77.662, 348.268, 74.0812, 350.229, 71.4383, 402.613, 91.9399, 401.991, 97.6526, 345.256, 187.553 )
+
+[sub_resource type="ConvexPolygonShape2D" id=183]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 345.256, 187.553, 401.991, 97.6526, 401.786, 177.212, 400.533, 180.408, 398.527, 184.169, 395.519, 187.992, 392.574, 190.122, 387.623, 191.376, 350.458, 191.188, 347.387, 190.248 )
+
+[sub_resource type="RectangleShape2D" id=49]
+
+custom_solver_bias = 0.0
+extents = Vector2( 3.96127, 20.1788 )
+
+[sub_resource type="RectangleShape2D" id=50]
+
+custom_solver_bias = 0.0
+extents = Vector2( 4.11896, 21.8805 )
+
+[sub_resource type="RectangleShape2D" id=51]
+
+custom_solver_bias = 0.0
+extents = Vector2( 3.92712, 22.7707 )
+
+[sub_resource type="ConvexPolygonShape2D" id=184]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 321.54, 447.643, 323.927, 450.542, 339.9, 481.42, 332.723, 508.379, 314.959, 508.174, 314.754, 452.619, 317.618, 445.597 )
+
+[sub_resource type="ConvexPolygonShape2D" id=185]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 389.998, 510.369, 389.742, 511.339, 361.82, 507.358, 339.9, 481.42 )
+
+[sub_resource type="ConvexPolygonShape2D" id=186]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 339.9, 481.42, 361.82, 507.358, 359.114, 507.766 )
+
+[sub_resource type="ConvexPolygonShape2D" id=187]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 339.9, 481.42, 359.114, 507.766, 356.613, 509.093 )
+
+[sub_resource type="ConvexPolygonShape2D" id=188]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 339.9, 481.42, 356.613, 509.093, 354.673, 510.625, 339.257, 512.054, 337.369, 509.553 )
+
+[sub_resource type="ConvexPolygonShape2D" id=189]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 353.434, 512.904, 349.007, 525.99, 345.077, 526.296, 343.392, 524.56 )
+
+[sub_resource type="ConvexPolygonShape2D" id=190]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 353.434, 512.904, 343.392, 524.56, 341.861, 523.08, 341.708, 517.873 )
+
+[sub_resource type="ConvexPolygonShape2D" id=191]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 353.434, 512.904, 341.708, 517.873, 341.044, 514.402 )
+
+[sub_resource type="ConvexPolygonShape2D" id=192]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 353.434, 512.904, 341.044, 514.402, 339.257, 512.054, 354.673, 510.625 )
+
+[sub_resource type="ConvexPolygonShape2D" id=193]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 339.9, 481.42, 337.369, 509.553, 332.723, 508.379 )
+
+[sub_resource type="ConvexPolygonShape2D" id=194]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 317.618, 445.597, 314.754, 452.619, 313.611, 450.542, 313.526, 443.807 )
+
+[sub_resource type="ConvexPolygonShape2D" id=195]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 313.526, 443.807, 313.611, 450.542, 312.076, 449.008 )
+
+[sub_resource type="ConvexPolygonShape2D" id=196]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 313.526, 443.807, 312.076, 449.008, 310.115, 448.496, 309.604, 440.908 )
+
+[sub_resource type="ConvexPolygonShape2D" id=197]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 309.604, 440.908, 310.115, 448.496, 306.364, 447.899, 304.488, 446.706, 303.124, 444.233, 302.868, 442.102, 307.302, 437.327 )
+
+[sub_resource type="ConvexPolygonShape2D" id=198]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 306.108, 432.723, 307.302, 437.327, 302.868, 442.102 )
+
+[sub_resource type="ConvexPolygonShape2D" id=199]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 305.473, 371.076, 306.256, 372.458, 306.108, 432.723, 302.868, 442.102, 302.755, 372.319, 303.676, 370.937, 304.551, 370.569 )
+
+[sub_resource type="RectangleShape2D" id=68]
+
+custom_solver_bias = 0.0
+extents = Vector2( 3.06653, 17.4987 )
+
+[sub_resource type="ConvexPolygonShape2D" id=200]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 356.125, 443.641, 355.69, 371.991, 356.507, 369.949, 357.834, 371.633, 399.641, 478.28 )
+
+[sub_resource type="ConvexPolygonShape2D" id=201]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 354.597, 449.919, 356.125, 443.641, 399.641, 478.28, 388.534, 489.342 )
+
+[sub_resource type="ConvexPolygonShape2D" id=202]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 354.597, 449.919, 388.534, 489.342, 349.959, 466.888, 351.373, 455.349 )
+
+[sub_resource type="ConvexPolygonShape2D" id=203]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 347.98, 459.591, 351.373, 455.349, 349.959, 466.888, 347.867, 464.059 )
+
+[sub_resource type="ConvexPolygonShape2D" id=204]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 594.559, 387.968, 594.636, 454.679, 593.251, 459.911, 590.481, 466.529, 587.019, 470.991, 582.402, 475.608, 558.703, 488.073, 545.793, 474.834, 586.326, 369.655 )
+
+[sub_resource type="ConvexPolygonShape2D" id=205]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 575.731, 506.862, 555.704, 511.113, 607.378, 483.812 )
+
+[sub_resource type="ConvexPolygonShape2D" id=206]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 580.832, 507.051, 575.731, 506.862, 607.378, 483.812 )
+
+[sub_resource type="ConvexPolygonShape2D" id=207]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 585.65, 508.185, 580.832, 507.051, 607.378, 483.812 )
+
+[sub_resource type="ConvexPolygonShape2D" id=208]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 589.712, 510.263, 585.65, 508.185, 607.378, 483.812, 610.59, 507.146, 607.094, 509.224 )
+
+[sub_resource type="ConvexPolygonShape2D" id=209]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 619.063, 419.42, 622.308, 415.547, 625.553, 419.21, 625.762, 452.915, 619.35, 460.758 )
+
+[sub_resource type="ConvexPolygonShape2D" id=210]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 619.35, 460.758, 625.762, 452.915, 633.831, 476.183, 618.43, 468.319 )
+
+[sub_resource type="ConvexPolygonShape2D" id=211]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 615.03, 507.051, 615.974, 474.365, 618.43, 468.319, 633.831, 476.183, 633.829, 507.051 )
+
+[sub_resource type="ConvexPolygonShape2D" id=212]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 612.29, 479.75, 615.974, 474.365, 615.03, 507.051 )
+
+[sub_resource type="ConvexPolygonShape2D" id=213]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 607.378, 483.812, 612.29, 479.75, 615.03, 507.051, 610.59, 507.146 )
+
+[sub_resource type="ConvexPolygonShape2D" id=214]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 589.712, 510.263, 607.094, 509.224, 605.488, 511.491, 592.452, 513.57 )
+
+[sub_resource type="ConvexPolygonShape2D" id=215]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 592.452, 513.57, 605.488, 511.491, 603.882, 515.27, 594.058, 516.687 )
+
+[sub_resource type="ConvexPolygonShape2D" id=216]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 596.892, 526.701, 594.058, 516.687, 603.882, 515.27, 604.071, 522.544, 601.804, 525.095, 599.915, 526.889 )
+
+[sub_resource type="ConvexPolygonShape2D" id=217]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 626.721, 351.334, 626.563, 394.407, 602.896, 344.549, 616.411, 321.757 )
+
+[sub_resource type="ConvexPolygonShape2D" id=218]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 657.758, 113.437, 659.491, 112.556, 661.084, 112.896, 661.131, 568.276, 656.062, 568.067, 656.088, 369.129, 656.747, 155.057 )
+
+[sub_resource type="ConvexPolygonShape2D" id=219]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 637.511, 279.092, 613.196, 253.316, 636.895, 214.92 )
+
+[sub_resource type="ConvexPolygonShape2D" id=220]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 656.088, 369.129, 634.433, 303.945, 638.511, 299.175 )
+
+[sub_resource type="ConvexPolygonShape2D" id=221]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 656.088, 369.129, 638.511, 299.175, 640.435, 294.327 )
+
+[sub_resource type="ConvexPolygonShape2D" id=222]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 656.747, 155.057, 656.802, 115.058, 657.758, 113.437 )
+
+[sub_resource type="ConvexPolygonShape2D" id=223]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 655.054, 165.599, 656.747, 155.057, 656.088, 369.129, 640.435, 294.327, 640.589, 288.864 )
+
+[sub_resource type="ConvexPolygonShape2D" id=224]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 653.054, 175.525, 655.054, 165.599, 640.589, 288.864 )
+
+[sub_resource type="ConvexPolygonShape2D" id=225]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 649.053, 188.99, 653.054, 175.525, 640.589, 288.864, 639.819, 283.17 )
+
+[sub_resource type="ConvexPolygonShape2D" id=226]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 636.895, 214.92, 649.053, 188.99, 639.819, 283.17, 637.511, 279.092 )
+
+[sub_resource type="RectangleShape2D" id=96]
+
+custom_solver_bias = 0.0
+extents = Vector2( 280.602, 25.9689 )
+
+[sub_resource type="RectangleShape2D" id=97]
+
+custom_solver_bias = 0.0
+extents = Vector2( 3.74353, 15.503 )
+
+[sub_resource type="ConvexPolygonShape2D" id=227]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 634.9, 476.116, 631.594, 468.086, 655.589, 468.086 )
+
+[sub_resource type="ConvexPolygonShape2D" id=228]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 634.9, 476.116, 655.589, 468.086, 655.333, 570.451, 634.995, 508.235 )
+
+[sub_resource type="ConvexPolygonShape2D" id=229]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 634.995, 508.235, 655.333, 570.451, 632.281, 570.266, 632.519, 507.717 )
+
+[sub_resource type="ConvexPolygonShape2D" id=101]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 475.884, 543.588, 483.733, 543.896, 485.656, 544.742, 488.503, 546.204, 491.427, 548.205, 493.889, 551.437, 494.89, 554.13, 494.736, 559.208, 493.966, 561.516, 491.658, 564.825, 488.734, 567.21, 484.502, 569.134, 475.269, 569.057, 471.498, 566.979, 468.036, 564.363, 466.112, 562.209, 465.035, 559.67, 465.035, 552.745, 466.343, 550.513, 467.959, 548.821, 470.344, 546.897, 473.499, 544.896 )
+
+[sub_resource type="ConvexPolygonShape2D" id=102]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 474.095, 541.61, 484.842, 541.61, 488.632, 542.685, 491.912, 544.721, 494.571, 547.775, 496.55, 550.717, 497.568, 553.771, 497.284, 562.699, 496.041, 565.253, 493.722, 567.685, 489.706, 570.852, 486.143, 572.662, 472.003, 572.436, 467.138, 569.156, 464.084, 566.724, 462.331, 564.687, 461.256, 562.255, 461.312, 552.244, 462.84, 550.151, 464.706, 547.606, 467.364, 544.947, 471.267, 542.346 )
+
+[sub_resource type="ConvexPolygonShape2D" id=103]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 477.744, 545.567, 483.966, 545.567, 486.059, 546.698, 488.547, 548.282, 490.753, 550.318, 491.998, 553.033, 492.054, 560.782, 491.206, 562.875, 489.452, 565.364, 486.737, 567.117, 484.079, 568.701, 475.765, 568.701, 472.427, 566.438, 469.882, 563.554, 468.77, 561.265, 469.034, 553.372, 471.013, 550.431, 472.823, 548.452, 475.029, 546.359 )
+
+[sub_resource type="ConvexPolygonShape2D" id=104]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 474.404, 545.368, 486.014, 545.184, 490.436, 547.626, 493.615, 550.712, 494.536, 553.707, 494.632, 560.662, 492.694, 564.211, 490.114, 566.468, 486.797, 568.726, 474.911, 569.002, 472.101, 567.574, 469.29, 565.777, 467.54, 563.566, 465.881, 559.972, 466.019, 554.72, 467.079, 551.588, 469.751, 548.593 )
+
+[sub_resource type="CircleShape2D" id=105]
+
+custom_solver_bias = 0.0
+radius = 10.2017
+
+[sub_resource type="ConvexPolygonShape2D" id=106]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 5.48718, -14.7002, 9.08264, -12.6126, 13.374, -9.71303, 15.5776, -6.92946, 17.0854, -4.1459, 17.3173, 2.813, 16.3895, 5.24861, 14.1859, 8.84406, 10.2424, 12.0915, 6.06708, 14.5272, -6.69086, 14.1792, -9.93835, 12.5555, -13.7657, 10.0039, -17.2452, 6.75638, -18.753, 3.5089, -18.5211, -3.68198, -17.7092, -6.58151, -15.1575, -9.2491, -12.9539, -11.4527, -10.6343, -12.7285, -6.92285, -14.5843 )
+
+[sub_resource type="RectangleShape2D" id=107]
+
+custom_solver_bias = 0.0
+extents = Vector2( 24.4457, 15.577 )
+
+[sub_resource type="Curve2D" id=108]
+
+bake_interval = 5.0
+_data = {
+"points": Vector2Array( 0, 0, 0, 0, 350.424, 199.745, 0, 0, 0, 0, 392.519, 199.745, 0, 0, 0, 0, 401.794, 199.269, 0, 0, 0, 0, 407.264, 196.891, 0, 0, 0, 0, 410.594, 192.372, 0, 0, 0, 0, 411.307, 186.189, 0, 0, 0, 0, 411.307, 176.913, 0, 0, 0, 0, 410.831, 97.9551, 0, 0, 0, 0, 411.783, 87.9664, 0, 0, 0, 0, 416.064, 80.5938, 0, 0, 0, 0, 421.058, 73.6969, 0, 0, 0, 0, 427.726, 63.8536, 0, 0, 0, 0, 439.113, 61.8097 )
+}
+
+[sub_resource type="RectangleShape2D" id=109]
+
+custom_solver_bias = 0.0
+extents = Vector2( 11.1008, 1.60411 )
+
+[sub_resource type="ConvexPolygonShape2D" id=110]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 475.884, 543.588, 483.733, 543.896, 485.656, 544.742, 488.503, 546.204, 491.427, 548.205, 493.889, 551.437, 494.89, 554.13, 494.736, 559.208, 493.966, 561.516, 491.658, 564.825, 488.734, 567.21, 484.502, 569.134, 475.269, 569.057, 471.498, 566.979, 468.036, 564.363, 466.112, 562.209, 465.035, 559.67, 465.035, 552.745, 466.343, 550.513, 467.959, 548.821, 470.344, 546.897, 473.499, 544.896 )
+
+[sub_resource type="ConvexPolygonShape2D" id=111]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 474.095, 541.61, 484.842, 541.61, 488.632, 542.685, 491.912, 544.721, 494.571, 547.775, 496.55, 550.717, 497.568, 553.771, 497.284, 562.699, 496.041, 565.253, 493.722, 567.685, 489.706, 570.852, 486.143, 572.662, 472.003, 572.436, 467.138, 569.156, 464.084, 566.724, 462.331, 564.687, 461.256, 562.255, 461.312, 552.244, 462.84, 550.151, 464.706, 547.606, 467.364, 544.947, 471.267, 542.346 )
+
+[sub_resource type="ConvexPolygonShape2D" id=112]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 5.48718, -14.7002, 9.08264, -12.6126, 13.374, -9.71303, 15.5776, -6.92946, 17.0854, -4.1459, 17.3173, 2.813, 16.3895, 5.24861, 14.1859, 8.84406, 10.2424, 12.0915, 6.06708, 14.5272, -6.69086, 14.1792, -9.93835, 12.5555, -13.7657, 10.0039, -17.2452, 6.75638, -18.753, 3.5089, -18.5211, -3.68198, -17.7092, -6.58151, -15.1575, -9.2491, -12.9539, -11.4527, -10.6343, -12.7285, -6.92285, -14.5843 )
+
+[sub_resource type="ConvexPolygonShape2D" id=113]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 475.884, 543.588, 483.733, 543.896, 485.656, 544.742, 488.503, 546.204, 491.427, 548.205, 493.889, 551.437, 494.89, 554.13, 494.736, 559.208, 493.966, 561.516, 491.658, 564.825, 488.734, 567.21, 484.502, 569.134, 475.269, 569.057, 471.498, 566.979, 468.036, 564.363, 466.112, 562.209, 465.035, 559.67, 465.035, 552.745, 466.343, 550.513, 467.959, 548.821, 470.344, 546.897, 473.499, 544.896 )
+
+[sub_resource type="ConvexPolygonShape2D" id=114]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 474.095, 541.61, 484.842, 541.61, 488.632, 542.685, 491.912, 544.721, 494.571, 547.775, 496.55, 550.717, 497.568, 553.771, 497.284, 562.699, 496.041, 565.253, 493.722, 567.685, 489.706, 570.852, 486.143, 572.662, 472.003, 572.436, 467.138, 569.156, 464.084, 566.724, 462.331, 564.687, 461.256, 562.255, 461.312, 552.244, 462.84, 550.151, 464.706, 547.606, 467.364, 544.947, 471.267, 542.346 )
+
+[sub_resource type="ConvexPolygonShape2D" id=115]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 477.744, 545.567, 483.966, 545.567, 486.059, 546.698, 488.547, 548.282, 490.753, 550.318, 491.998, 553.033, 492.054, 560.782, 491.206, 562.875, 489.452, 565.364, 486.737, 567.117, 484.079, 568.701, 475.765, 568.701, 472.427, 566.438, 469.882, 563.554, 468.77, 561.265, 469.034, 553.372, 471.013, 550.431, 472.823, 548.452, 475.029, 546.359 )
+
+[sub_resource type="ConvexPolygonShape2D" id=116]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 474.404, 545.368, 486.014, 545.184, 490.436, 547.626, 493.615, 550.712, 494.536, 553.707, 494.632, 560.662, 492.694, 564.211, 490.114, 566.468, 486.797, 568.726, 474.911, 569.002, 472.101, 567.574, 469.29, 565.777, 467.54, 563.566, 465.881, 559.972, 466.019, 554.72, 467.079, 551.588, 469.751, 548.593 )
+
+[sub_resource type="ConvexPolygonShape2D" id=117]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 5.48718, -14.7002, 9.08264, -12.6126, 13.374, -9.71303, 15.5776, -6.92946, 17.0854, -4.1459, 17.3173, 2.813, 16.3895, 5.24861, 14.1859, 8.84406, 10.2424, 12.0915, 6.06708, 14.5272, -6.69086, 14.1792, -9.93835, 12.5555, -13.7657, 10.0039, -17.2452, 6.75638, -18.753, 3.5089, -18.5211, -3.68198, -17.7092, -6.58151, -15.1575, -9.2491, -12.9539, -11.4527, -10.6343, -12.7285, -6.92285, -14.5843 )
+
+[sub_resource type="RectangleShape2D" id=118]
+
+custom_solver_bias = 0.0
+extents = Vector2( 7.60315, 10 )
+
+[sub_resource type="RectangleShape2D" id=119]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 85.0765 )
+
+[sub_resource type="SpriteFrames" id=120]
+
+animations = [ {
+"frames": [ ExtResource( 11 ), ExtResource( 12 ) ],
+"loop": true,
+"name": "default",
+"speed": 6.0
+} ]
+
+[sub_resource type="ConvexPolygonShape2D" id=121]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -7.55942, -25.3322, -10.0045, -19.2806, -11.441, -17.6913, -13.6721, -16.1631, -15.9339, -15.4296, -17.8899, -14.9406, -20.0294, -14.8489, -25.5614, -16.9578 )
+
+[sub_resource type="ConvexPolygonShape2D" id=122]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -7.62991, -25.2537, -8.57739, -22.2279, -9.95276, -19.3549, -11.3281, -17.8879, -13.5593, -16.2069, -15.6376, -15.5039, -17.7465, -14.9538, -20.0081, -14.8926, -25.5707, -16.8792 )
+
+[sub_resource type="ConvexPolygonShape2D" id=123]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -7.98343, -26.0897, -10.0618, -20.0075, -11.1926, -18.4793, -13.9738, -16.6149, -17.0302, -15.2701, -19.7504, -14.6894, -25.588, -16.7983 )
+
+[sub_resource type="ConvexPolygonShape2D" id=124]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 10.627, -7.82224, 7.01447, -8.00638, 4.96069, -8.83713, 0.58429, -11.8152, -1.25403, -14.718, -1.95691, -16.9713, -1.56873, -22.2713 )
+
+[sub_resource type="ConvexPolygonShape2D" id=125]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -39.1866, 2.43935, -35.5694, 1.01463, -32.0579, 1.42527, -29.786, 2.3098, -27.4843, 3.91019, -26.1475, 5.32873, -24.7723, 8.89333 )
+
+[sub_resource type="ConvexPolygonShape2D" id=126]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -36.7638, -1.75352, -33.2368, -2.75768, -31.0313, -2.35104, -28.7455, -1.77143, -26.307, -0.590221, -24.4051, 1.42801, -23.2482, 5.55651 )
+
+[sub_resource type="RectangleShape2D" id=127]
+
+custom_solver_bias = 0.0
+extents = Vector2( 8.83521, 2.20782 )
+
+[sub_resource type="RectangleShape2D" id=128]
+
+custom_solver_bias = 0.0
+extents = Vector2( 7.99536, 2.83286 )
+
+[sub_resource type="RectangleShape2D" id=129]
+
+custom_solver_bias = 0.0
+extents = Vector2( 8.38281, 2.83286 )
+
+[sub_resource type="RectangleShape2D" id=130]
+
+custom_solver_bias = 0.0
+extents = Vector2( 8.38269, 2.25172 )
+
+[sub_resource type="RectangleShape2D" id=131]
+
+custom_solver_bias = 0.0
+extents = Vector2( 8.57648, 2.44543 )
+
+[sub_resource type="RectangleShape2D" id=132]
+
+custom_solver_bias = 0.0
+extents = Vector2( 5.57437, 3.63831 )
+
+[sub_resource type="RectangleShape2D" id=133]
+
+custom_solver_bias = 0.0
+extents = Vector2( 5.57437, 3.63831 )
+
+[sub_resource type="RectangleShape2D" id=134]
+
+custom_solver_bias = 0.0
+extents = Vector2( 5.57437, 3.63831 )
+
+[sub_resource type="RectangleShape2D" id=135]
+
+custom_solver_bias = 0.0
+extents = Vector2( 5.57437, 3.63831 )
+
+[node name="Pinball" type="Node2D"]
+
+script/script = ExtResource( 1 )
+
+[node name="Fond" type="Sprite" parent="."]
+
+texture = ExtResource( 2 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Colliders" type="Node2D" parent="."]
+
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Walls" type="StaticBody2D" parent="Colliders"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 136 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 450.942, 1.7337 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 137 )
+shapes/1/transform = Matrix32( 1, 0, 0, 1, 450.942, 1.7337 )
+shapes/1/trigger = false
+shapes/2/shape = SubResource( 138 )
+shapes/2/transform = Matrix32( 1, 0, 0, 1, 450.942, 1.7337 )
+shapes/2/trigger = false
+shapes/3/shape = SubResource( 139 )
+shapes/3/transform = Matrix32( 1, 0, 0, 1, 450.942, 1.7337 )
+shapes/3/trigger = false
+shapes/4/shape = SubResource( 140 )
+shapes/4/transform = Matrix32( 1, 0, 0, 1, 450.942, 1.7337 )
+shapes/4/trigger = false
+shapes/5/shape = SubResource( 141 )
+shapes/5/transform = Matrix32( 1, 0, 0, 1, 450.942, 1.7337 )
+shapes/5/trigger = false
+shapes/6/shape = SubResource( 142 )
+shapes/6/transform = Matrix32( 1, 0, 0, 1, 450.942, 1.7337 )
+shapes/6/trigger = false
+shapes/7/shape = SubResource( 143 )
+shapes/7/transform = Matrix32( 1, 0, 0, 1, 450.942, 1.7337 )
+shapes/7/trigger = false
+shapes/8/shape = SubResource( 144 )
+shapes/8/transform = Matrix32( 1, 0, 0, 1, 450.942, 1.7337 )
+shapes/8/trigger = false
+shapes/9/shape = SubResource( 145 )
+shapes/9/transform = Matrix32( 1, 0, 0, 1, 450.942, 1.7337 )
+shapes/9/trigger = false
+shapes/10/shape = SubResource( 146 )
+shapes/10/transform = Matrix32( 1, 0, 0, 1, 450.942, 1.7337 )
+shapes/10/trigger = false
+shapes/11/shape = SubResource( 147 )
+shapes/11/transform = Matrix32( 1, 0, 0, 1, 450.942, 1.7337 )
+shapes/11/trigger = false
+shapes/12/shape = SubResource( 148 )
+shapes/12/transform = Matrix32( 1, 0, 0, 1, 450.942, 1.7337 )
+shapes/12/trigger = false
+shapes/13/shape = SubResource( 149 )
+shapes/13/transform = Matrix32( 1, 0, 0, 1, 450.942, 1.7337 )
+shapes/13/trigger = false
+shapes/14/shape = SubResource( 150 )
+shapes/14/transform = Matrix32( 1, 0, 0, 1, 450.942, 1.7337 )
+shapes/14/trigger = false
+shapes/15/shape = SubResource( 151 )
+shapes/15/transform = Matrix32( 1, 0, 0, 1, 450.942, 1.7337 )
+shapes/15/trigger = false
+shapes/16/shape = SubResource( 152 )
+shapes/16/transform = Matrix32( 1, 0, 0, 1, 450.942, 1.7337 )
+shapes/16/trigger = false
+shapes/17/shape = SubResource( 153 )
+shapes/17/transform = Matrix32( 1, 0, 0, 1, 450.942, 1.7337 )
+shapes/17/trigger = false
+shapes/18/shape = SubResource( 154 )
+shapes/18/transform = Matrix32( 1, 0, 0, 1, 450.942, 1.7337 )
+shapes/18/trigger = false
+shapes/19/shape = SubResource( 155 )
+shapes/19/transform = Matrix32( 1, 0, 0, 1, 450.942, 1.7337 )
+shapes/19/trigger = false
+shapes/20/shape = SubResource( 156 )
+shapes/20/transform = Matrix32( 1, 0, 0, 1, 450.942, 1.7337 )
+shapes/20/trigger = false
+shapes/21/shape = SubResource( 157 )
+shapes/21/transform = Matrix32( 1, 0, 0, 1, 450.942, 1.7337 )
+shapes/21/trigger = false
+shapes/22/shape = SubResource( 158 )
+shapes/22/transform = Matrix32( 1, 0, 0, 1, 450.942, 1.7337 )
+shapes/22/trigger = false
+shapes/23/shape = SubResource( 159 )
+shapes/23/transform = Matrix32( 1, 0, 0, 1, 450.942, 1.7337 )
+shapes/23/trigger = false
+shapes/24/shape = SubResource( 160 )
+shapes/24/transform = Matrix32( 1, 0, 0, 1, 450.942, 1.7337 )
+shapes/24/trigger = false
+shapes/25/shape = SubResource( 161 )
+shapes/25/transform = Matrix32( 1, 0, 0, 1, 450.942, 1.7337 )
+shapes/25/trigger = false
+shapes/26/shape = SubResource( 162 )
+shapes/26/transform = Matrix32( 1, 0, 0, 1, 450.942, 1.7337 )
+shapes/26/trigger = false
+shapes/27/shape = SubResource( 163 )
+shapes/27/transform = Matrix32( 1, 0, 0, 1, 450.942, 1.7337 )
+shapes/27/trigger = false
+shapes/28/shape = SubResource( 164 )
+shapes/28/transform = Matrix32( 1, 0, 0, 1, 450.942, 1.7337 )
+shapes/28/trigger = false
+shapes/29/shape = SubResource( 165 )
+shapes/29/transform = Matrix32( 1, 0, 0, 1, 450.942, 1.7337 )
+shapes/29/trigger = false
+shapes/30/shape = SubResource( 166 )
+shapes/30/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/30/trigger = false
+shapes/31/shape = SubResource( 167 )
+shapes/31/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/31/trigger = false
+shapes/32/shape = SubResource( 168 )
+shapes/32/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/32/trigger = false
+shapes/33/shape = SubResource( 169 )
+shapes/33/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/33/trigger = false
+shapes/34/shape = SubResource( 170 )
+shapes/34/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/34/trigger = false
+shapes/35/shape = SubResource( 171 )
+shapes/35/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/35/trigger = false
+shapes/36/shape = SubResource( 172 )
+shapes/36/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/36/trigger = false
+shapes/37/shape = SubResource( 173 )
+shapes/37/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/37/trigger = false
+shapes/38/shape = SubResource( 174 )
+shapes/38/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/38/trigger = false
+shapes/39/shape = SubResource( 175 )
+shapes/39/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/39/trigger = false
+shapes/40/shape = SubResource( 176 )
+shapes/40/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/40/trigger = false
+shapes/41/shape = SubResource( 177 )
+shapes/41/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/41/trigger = false
+shapes/42/shape = SubResource( 178 )
+shapes/42/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/42/trigger = false
+shapes/43/shape = SubResource( 179 )
+shapes/43/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/43/trigger = false
+shapes/44/shape = SubResource( 180 )
+shapes/44/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/44/trigger = false
+shapes/45/shape = SubResource( 181 )
+shapes/45/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/45/trigger = false
+shapes/46/shape = SubResource( 182 )
+shapes/46/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/46/trigger = false
+shapes/47/shape = SubResource( 183 )
+shapes/47/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/47/trigger = false
+shapes/48/shape = SubResource( 49 )
+shapes/48/transform = Matrix32( 1, 0, 0, 1, 476.909, 102.279 )
+shapes/48/trigger = false
+shapes/49/shape = SubResource( 49 )
+shapes/49/transform = Matrix32( 1, 0, 0, 1, 611.968, 102.774 )
+shapes/49/trigger = false
+shapes/50/shape = SubResource( 50 )
+shapes/50/transform = Matrix32( 1, 0, 0, 1, 585.145, 98.3557 )
+shapes/50/trigger = false
+shapes/51/shape = SubResource( 50 )
+shapes/51/transform = Matrix32( 1, 0, 0, 1, 504.047, 97.8823 )
+shapes/51/trigger = false
+shapes/52/shape = SubResource( 51 )
+shapes/52/transform = Matrix32( 1, 0, 0, 1, 531.149, 93.5788 )
+shapes/52/trigger = false
+shapes/53/shape = SubResource( 51 )
+shapes/53/transform = Matrix32( 1, 0, 0, 1, 557.972, 93.6206 )
+shapes/53/trigger = false
+shapes/54/shape = SubResource( 184 )
+shapes/54/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/54/trigger = false
+shapes/55/shape = SubResource( 185 )
+shapes/55/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/55/trigger = false
+shapes/56/shape = SubResource( 186 )
+shapes/56/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/56/trigger = false
+shapes/57/shape = SubResource( 187 )
+shapes/57/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/57/trigger = false
+shapes/58/shape = SubResource( 188 )
+shapes/58/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/58/trigger = false
+shapes/59/shape = SubResource( 189 )
+shapes/59/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/59/trigger = false
+shapes/60/shape = SubResource( 190 )
+shapes/60/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/60/trigger = false
+shapes/61/shape = SubResource( 191 )
+shapes/61/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/61/trigger = false
+shapes/62/shape = SubResource( 192 )
+shapes/62/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/62/trigger = false
+shapes/63/shape = SubResource( 193 )
+shapes/63/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/63/trigger = false
+shapes/64/shape = SubResource( 194 )
+shapes/64/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/64/trigger = false
+shapes/65/shape = SubResource( 195 )
+shapes/65/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/65/trigger = false
+shapes/66/shape = SubResource( 196 )
+shapes/66/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/66/trigger = false
+shapes/67/shape = SubResource( 197 )
+shapes/67/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/67/trigger = false
+shapes/68/shape = SubResource( 198 )
+shapes/68/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/68/trigger = false
+shapes/69/shape = SubResource( 199 )
+shapes/69/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/69/trigger = false
+shapes/70/shape = SubResource( 68 )
+shapes/70/transform = Matrix32( 1, 0, 0, 1, 340.66, 386.819 )
+shapes/70/trigger = false
+shapes/71/shape = SubResource( 68 )
+shapes/71/transform = Matrix32( 1, 0, 0, 1, 322.617, 386.441 )
+shapes/71/trigger = false
+shapes/72/shape = SubResource( 200 )
+shapes/72/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/72/trigger = false
+shapes/73/shape = SubResource( 201 )
+shapes/73/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/73/trigger = false
+shapes/74/shape = SubResource( 202 )
+shapes/74/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/74/trigger = false
+shapes/75/shape = SubResource( 203 )
+shapes/75/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/75/trigger = false
+shapes/76/shape = SubResource( 204 )
+shapes/76/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/76/trigger = false
+shapes/77/shape = SubResource( 205 )
+shapes/77/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/77/trigger = false
+shapes/78/shape = SubResource( 206 )
+shapes/78/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/78/trigger = false
+shapes/79/shape = SubResource( 207 )
+shapes/79/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/79/trigger = false
+shapes/80/shape = SubResource( 208 )
+shapes/80/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/80/trigger = false
+shapes/81/shape = SubResource( 209 )
+shapes/81/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/81/trigger = false
+shapes/82/shape = SubResource( 210 )
+shapes/82/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/82/trigger = false
+shapes/83/shape = SubResource( 211 )
+shapes/83/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/83/trigger = false
+shapes/84/shape = SubResource( 212 )
+shapes/84/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/84/trigger = false
+shapes/85/shape = SubResource( 213 )
+shapes/85/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/85/trigger = false
+shapes/86/shape = SubResource( 214 )
+shapes/86/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/86/trigger = false
+shapes/87/shape = SubResource( 215 )
+shapes/87/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/87/trigger = false
+shapes/88/shape = SubResource( 216 )
+shapes/88/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/88/trigger = false
+shapes/89/shape = SubResource( 217 )
+shapes/89/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/89/trigger = false
+shapes/90/shape = SubResource( 218 )
+shapes/90/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/90/trigger = false
+shapes/91/shape = SubResource( 219 )
+shapes/91/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/91/trigger = false
+shapes/92/shape = SubResource( 220 )
+shapes/92/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/92/trigger = false
+shapes/93/shape = SubResource( 221 )
+shapes/93/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/93/trigger = false
+shapes/94/shape = SubResource( 222 )
+shapes/94/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/94/trigger = false
+shapes/95/shape = SubResource( 223 )
+shapes/95/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/95/trigger = false
+shapes/96/shape = SubResource( 224 )
+shapes/96/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/96/trigger = false
+shapes/97/shape = SubResource( 225 )
+shapes/97/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/97/trigger = false
+shapes/98/shape = SubResource( 226 )
+shapes/98/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/98/trigger = false
+shapes/99/shape = SubResource( 96 )
+shapes/99/transform = Matrix32( 1, 0, 0, 1.04737, 474.654, -23.4007 )
+shapes/99/trigger = false
+shapes/100/shape = SubResource( 97 )
+shapes/100/transform = Matrix32( 1, 0, 0, 1, 459.017, 185.858 )
+shapes/100/trigger = false
+shapes/101/shape = SubResource( 227 )
+shapes/101/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/101/trigger = false
+shapes/102/shape = SubResource( 228 )
+shapes/102/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/102/trigger = false
+shapes/103/shape = SubResource( 229 )
+shapes/103/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/103/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 0.0
+bounce = 0.25
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Colliders/Walls"]
+
+transform/pos = Vector2( 450.942, 1.7337 )
+build_mode = 0
+polygon = Vector2Array( -170.292, 573.198, -170.315, 0.595773, 238.79, 0.15595, 238.866, 573.613, 228.911, 573.726, 229.29, 88.6416, 228.59, 80.25, 226.143, 72.383, 222.122, 61.1942, 216.877, 52.1034, 210.409, 43.0126, 200.968, 33.9217, 188.381, 24.4812, 176.843, 16.6142, 166.528, 11.7191, 151.843, 6.64919, 138.556, 3.852, 126.318, 1.92894, 116.528, 1.05482, 23.2317, 1.20723, 13.0325, 1.22964, 4.71594, 2.81318, -4.06958, 4.41914, -14.2721, 7.72551, -25.7972, 12.071, -33.1656, 14.6217, -44.0295, 17.928, -57.946, 18.5372, -129.099, 19.0617, -136.966, 21.1596, -144.134, 24.4812, -149.554, 28.8518, -153.924, 35.1455, -157.071, 41.4391, -156.887, 194.258, -156.499, 200.65, -155.337, 207.042, -153.787, 211.304, -112.527, 291.307, -162.892, 322.107, -162.859, 573.453 )
+shape_range = Vector2( 0, 29 )
+trigger = false
+
+[node name="CollisionPolygon2D 2" type="CollisionPolygon2D" parent="Colliders/Walls"]
+
+build_mode = 0
+polygon = Vector2Array( 315.219, 63.9449, 315.221, 197.105, 316.235, 203.002, 318.769, 208.3, 353.874, 255.936, 360.093, 258.792, 369.445, 259.207, 418.154, 235.31, 422.216, 231.625, 425.523, 226.902, 427.71, 222.735, 428.87, 217.979, 430.05, 146.263, 441.764, 121.89, 441.387, 70.7831, 433.829, 70.6886, 425.516, 81.8358, 421.17, 92.1328, 418.903, 101.674, 419.187, 192.458, 417.864, 197.937, 414.085, 203.699, 408.795, 207.761, 403.599, 209.084, 340.306, 208.706, 335.771, 207.95, 330.67, 204.455, 327.08, 201.149, 323.585, 195.197, 321.79, 188.207, 321.885, 59.1533, 319.316, 59.5005, 317.232, 61.0977 )
+shape_range = Vector2( 30, 42 )
+trigger = false
+
+[node name="CollisionPolygon2D 3" type="CollisionPolygon2D" parent="Colliders/Walls"]
+
+build_mode = 0
+polygon = Vector2Array( 391.131, 39.9034, 417.036, 52.856, 418.507, 55.175, 419.186, 58.6818, 418.394, 61.9058, 408.269, 77.0642, 404.423, 84.9263, 402.613, 91.9399, 401.991, 97.6526, 401.786, 177.212, 400.533, 180.408, 398.527, 184.169, 395.519, 187.992, 392.574, 190.122, 387.623, 191.376, 350.458, 191.188, 347.387, 190.248, 345.256, 187.553, 344.943, 82.5217, 346.477, 77.662, 348.268, 74.0812, 350.229, 71.4383, 381.799, 39.8468, 386.889, 39.6772 )
+shape_range = Vector2( 43, 47 )
+trigger = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Colliders/Walls"]
+
+transform/pos = Vector2( 476.909, 102.279 )
+shape = SubResource( 49 )
+trigger = false
+_update_shape_index = 48
+
+[node name="CollisionShape2D1" type="CollisionShape2D" parent="Colliders/Walls"]
+
+transform/pos = Vector2( 611.968, 102.774 )
+shape = SubResource( 49 )
+trigger = false
+_update_shape_index = 49
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Colliders/Walls"]
+
+transform/pos = Vector2( 585.145, 98.3557 )
+shape = SubResource( 50 )
+trigger = false
+_update_shape_index = 50
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Colliders/Walls"]
+
+transform/pos = Vector2( 504.047, 97.8823 )
+shape = SubResource( 50 )
+trigger = false
+_update_shape_index = 51
+
+[node name="CollisionShape2D 2" type="CollisionShape2D" parent="Colliders/Walls"]
+
+transform/pos = Vector2( 531.149, 93.5788 )
+shape = SubResource( 51 )
+trigger = false
+_update_shape_index = 52
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Colliders/Walls"]
+
+transform/pos = Vector2( 557.972, 93.6206 )
+shape = SubResource( 51 )
+trigger = false
+_update_shape_index = 53
+
+[node name="CollisionPolygon2D 4" type="CollisionPolygon2D" parent="Colliders/Walls"]
+
+build_mode = 0
+polygon = Vector2Array( 302.755, 372.319, 302.868, 442.102, 303.124, 444.233, 304.488, 446.706, 306.364, 447.899, 310.115, 448.496, 312.076, 449.008, 313.611, 450.542, 314.754, 452.619, 314.959, 508.174, 332.723, 508.379, 337.369, 509.553, 339.257, 512.054, 341.044, 514.402, 341.708, 517.873, 341.861, 523.08, 343.392, 524.56, 345.077, 526.296, 349.007, 525.99, 353.434, 512.904, 354.673, 510.625, 356.613, 509.093, 359.114, 507.766, 361.82, 507.358, 389.742, 511.339, 389.998, 510.369, 339.9, 481.42, 323.927, 450.542, 321.54, 447.643, 317.618, 445.597, 313.526, 443.807, 309.604, 440.908, 307.302, 437.327, 306.108, 432.723, 306.256, 372.458, 305.473, 371.076, 304.551, 370.569, 303.676, 370.937 )
+shape_range = Vector2( 54, 69 )
+trigger = false
+
+[node name="CollisionShape2D 3" type="CollisionShape2D" parent="Colliders/Walls"]
+
+transform/pos = Vector2( 340.66, 386.819 )
+shape = SubResource( 68 )
+trigger = false
+_update_shape_index = 70
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Colliders/Walls"]
+
+transform/pos = Vector2( 322.617, 386.441 )
+shape = SubResource( 68 )
+trigger = false
+_update_shape_index = 71
+
+[node name="CollisionPolygon2D 5" type="CollisionPolygon2D" parent="Colliders/Walls"]
+
+build_mode = 0
+polygon = Vector2Array( 355.69, 371.991, 356.125, 443.641, 354.597, 449.919, 351.373, 455.349, 347.98, 459.591, 347.867, 464.059, 349.959, 466.888, 388.534, 489.342, 399.641, 478.28, 357.834, 371.633, 356.507, 369.949 )
+shape_range = Vector2( 72, 75 )
+trigger = false
+
+[node name="CollisionPolygon2D 6" type="CollisionPolygon2D" parent="Colliders/Walls"]
+
+build_mode = 0
+polygon = Vector2Array( 586.326, 369.655, 545.793, 474.834, 558.703, 488.073, 582.402, 475.608, 587.019, 470.991, 590.481, 466.529, 593.251, 459.911, 594.636, 454.679, 594.559, 387.968 )
+shape_range = Vector2( 76, 76 )
+trigger = false
+
+[node name="CollisionPolygon2D 7" type="CollisionPolygon2D" parent="Colliders/Walls"]
+
+build_mode = 0
+polygon = Vector2Array( 619.063, 419.42, 619.35, 460.758, 618.43, 468.319, 615.974, 474.365, 612.29, 479.75, 607.378, 483.812, 555.704, 511.113, 575.731, 506.862, 580.832, 507.051, 585.65, 508.185, 589.712, 510.263, 592.452, 513.57, 594.058, 516.687, 596.892, 526.701, 599.915, 526.889, 601.804, 525.095, 604.071, 522.544, 603.882, 515.27, 605.488, 511.491, 607.094, 509.224, 610.59, 507.146, 615.03, 507.051, 633.829, 507.051, 633.831, 476.183, 625.762, 452.915, 625.553, 419.21, 622.308, 415.547 )
+shape_range = Vector2( 77, 88 )
+trigger = false
+
+[node name="CollisionPolygon2D 8" type="CollisionPolygon2D" parent="Colliders/Walls"]
+
+build_mode = 0
+polygon = Vector2Array( 616.411, 321.757, 602.896, 344.549, 626.563, 394.407, 626.721, 351.334 )
+shape_range = Vector2( 89, 89 )
+trigger = false
+
+[node name="CollisionPolygon2D 9" type="CollisionPolygon2D" parent="Colliders/Walls"]
+
+build_mode = 0
+polygon = Vector2Array( 656.802, 115.058, 656.747, 155.057, 655.054, 165.599, 653.054, 175.525, 649.053, 188.99, 636.895, 214.92, 613.196, 253.316, 637.511, 279.092, 639.819, 283.17, 640.589, 288.864, 640.435, 294.327, 638.511, 299.175, 634.433, 303.945, 656.088, 369.129, 656.062, 568.067, 661.131, 568.276, 661.084, 112.896, 659.491, 112.556, 657.758, 113.437 )
+shape_range = Vector2( 90, 98 )
+trigger = false
+
+[node name="CollisionShape2D 4" type="CollisionShape2D" parent="Colliders/Walls"]
+
+transform/pos = Vector2( 474.654, -23.4007 )
+transform/scale = Vector2( 1, 1.04737 )
+shape = SubResource( 96 )
+trigger = false
+_update_shape_index = 99
+
+[node name="CollisionShape2D 6" type="CollisionShape2D" parent="Colliders/Walls"]
+
+transform/pos = Vector2( 459.017, 185.858 )
+shape = SubResource( 97 )
+trigger = false
+_update_shape_index = 100
+
+[node name="CollisionPolygon2D 10" type="CollisionPolygon2D" parent="Colliders/Walls"]
+
+build_mode = 0
+polygon = Vector2Array( 632.281, 570.266, 632.519, 507.717, 634.995, 508.235, 634.9, 476.116, 631.594, 468.086, 655.589, 468.086, 655.333, 570.451 )
+shape_range = Vector2( 101, 103 )
+trigger = false
+
+[node name="Bounce" type="StaticBody2D" parent="Colliders"]
+
+editor/display_folded = true
+transform/pos = Vector2( -10, 0 )
+input/pickable = false
+shapes/0/shape = SubResource( 101 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 146.971, -397.061 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 102 )
+shapes/1/transform = Matrix32( 1, 0, 0, 1, -4.4422, -273.472 )
+shapes/1/trigger = false
+shapes/2/shape = SubResource( 103 )
+shapes/2/transform = Matrix32( 1, 0, 0, 1, 11.2118, -400.517 )
+shapes/2/trigger = false
+shapes/3/shape = SubResource( 104 )
+shapes/3/transform = Matrix32( 1, 0, 0, 1, 74.5578, -283.472 )
+shapes/3/trigger = false
+shapes/4/shape = SubResource( 105 )
+shapes/4/transform = Matrix32( 1, 0, 0, 1, 482.637, 559.845 )
+shapes/4/trigger = false
+shapes/5/shape = SubResource( 106 )
+shapes/5/transform = Matrix32( 1, 0, 0, 1, 559.75, 191.796 )
+shapes/5/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 0.0
+bounce = 0.9
+
+[node name="CollisionPolygon2D13" type="CollisionPolygon2D" parent="Colliders/Bounce"]
+
+transform/pos = Vector2( 146.971, -397.061 )
+build_mode = 0
+polygon = Vector2Array( 475.884, 543.588, 483.733, 543.896, 485.656, 544.742, 488.503, 546.204, 491.427, 548.205, 493.889, 551.437, 494.89, 554.13, 494.736, 559.208, 493.966, 561.516, 491.658, 564.825, 488.734, 567.21, 484.502, 569.134, 475.269, 569.057, 471.498, 566.979, 468.036, 564.363, 466.112, 562.209, 465.035, 559.67, 465.035, 552.745, 466.343, 550.513, 467.959, 548.821, 470.344, 546.897, 473.499, 544.896 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="CollisionPolygon2D17 3" type="CollisionPolygon2D" parent="Colliders/Bounce"]
+
+transform/pos = Vector2( -4.4422, -273.472 )
+build_mode = 0
+polygon = Vector2Array( 474.095, 541.61, 484.842, 541.61, 488.632, 542.685, 491.912, 544.721, 494.571, 547.775, 496.55, 550.717, 497.568, 553.771, 497.284, 562.699, 496.041, 565.253, 493.722, 567.685, 489.706, 570.852, 486.143, 572.662, 472.003, 572.436, 467.138, 569.156, 464.084, 566.724, 462.331, 564.687, 461.256, 562.255, 461.312, 552.244, 462.84, 550.151, 464.706, 547.606, 467.364, 544.947, 471.267, 542.346 )
+shape_range = Vector2( 1, 1 )
+trigger = false
+
+[node name="CollisionPolygon2D17 2" type="CollisionPolygon2D" parent="Colliders/Bounce"]
+
+transform/pos = Vector2( 11.2118, -400.517 )
+build_mode = 0
+polygon = Vector2Array( 477.744, 545.567, 483.966, 545.567, 486.059, 546.698, 488.547, 548.282, 490.753, 550.318, 491.998, 553.033, 492.054, 560.782, 491.206, 562.875, 489.452, 565.364, 486.737, 567.117, 484.079, 568.701, 475.765, 568.701, 472.427, 566.438, 469.882, 563.554, 468.77, 561.265, 469.034, 553.372, 471.013, 550.431, 472.823, 548.452, 475.029, 546.359 )
+shape_range = Vector2( 2, 2 )
+trigger = false
+
+[node name="CollisionPolygon2D17" type="CollisionPolygon2D" parent="Colliders/Bounce"]
+
+transform/pos = Vector2( 74.5578, -283.472 )
+build_mode = 0
+polygon = Vector2Array( 474.404, 545.368, 486.014, 545.184, 490.436, 547.626, 493.615, 550.712, 494.536, 553.707, 494.632, 560.662, 492.694, 564.211, 490.114, 566.468, 486.797, 568.726, 474.911, 569.002, 472.101, 567.574, 469.29, 565.777, 467.54, 563.566, 465.881, 559.972, 466.019, 554.72, 467.079, 551.588, 469.751, 548.593 )
+shape_range = Vector2( 3, 3 )
+trigger = false
+
+[node name="Bottom1" type="CollisionShape2D" parent="Colliders/Bounce"]
+
+transform/pos = Vector2( 482.637, 559.845 )
+shape = SubResource( 105 )
+trigger = false
+_update_shape_index = 4
+
+[node name="CollisionPolygon2D1" type="CollisionPolygon2D" parent="Colliders/Bounce"]
+
+transform/pos = Vector2( 559.75, 191.796 )
+build_mode = 0
+polygon = Vector2Array( -6.92285, -14.5843, -10.6343, -12.7285, -12.9539, -11.4527, -15.1575, -9.2491, -17.7092, -6.58151, -18.5211, -3.68198, -18.753, 3.5089, -17.2452, 6.75638, -13.7657, 10.0039, -9.93835, 12.5555, -6.69086, 14.1792, 6.06708, 14.5272, 10.2424, 12.0915, 14.1859, 8.84406, 16.3895, 5.24861, 17.3173, 2.813, 17.0854, -4.1459, 15.5776, -6.92946, 13.374, -9.71303, 9.08264, -12.6126, 5.48718, -14.7002 )
+shape_range = Vector2( 5, 5 )
+trigger = false
+
+[node name="Gauche" type="Control" parent="."]
+
+process/pause_mode = 2
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 40.0
+margin/bottom = 40.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Score1" type="Label" parent="Gauche"]
+
+process/pause_mode = 2
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 81.0
+margin/top = 35.0
+margin/right = 259.0
+margin/bottom = 73.0
+custom_fonts/font = ExtResource( 3 )
+text = "0"
+align = 2
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Score2" type="Label" parent="Gauche"]
+
+process/pause_mode = 2
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 81.0
+margin/top = 125.0
+margin/right = 259.0
+margin/bottom = 163.0
+custom_fonts/font = ExtResource( 3 )
+text = "0"
+align = 2
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Score3" type="Label" parent="Gauche"]
+
+process/pause_mode = 2
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 81.0
+margin/top = 217.0
+margin/right = 259.0
+margin/bottom = 255.0
+custom_fonts/font = ExtResource( 3 )
+text = "0"
+align = 2
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Score4" type="Label" parent="Gauche"]
+
+process/pause_mode = 2
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 81.0
+margin/top = 307.0
+margin/right = 259.0
+margin/bottom = 345.0
+custom_fonts/font = ExtResource( 3 )
+text = "0"
+align = 2
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Crédit" type="Label" parent="Gauche"]
+
+process/pause_mode = 2
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 82.0
+margin/top = 523.0
+margin/right = 152.0
+margin/bottom = 561.0
+custom_fonts/font = ExtResource( 3 )
+text = "0"
+align = 2
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Balls" type="Label" parent="Gauche"]
+
+process/pause_mode = 2
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 188.0
+margin/top = 522.0
+margin/right = 258.0
+margin/bottom = 560.0
+custom_fonts/font = ExtResource( 3 )
+text = "0"
+align = 2
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Event_01" type="Area2D" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 344.853, 199.743 )
+transform/scale = Vector2( 0.0700932, 0.327327 )
+input/pickable = true
+shapes/0/shape = SubResource( 107 )
+shapes/0/transform = Matrix32( 2.69081, 0, 0, 1.24946, -23.2983, 0.274201 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Collision" type="CollisionShape2D" parent="Event_01"]
+
+transform/pos = Vector2( -23.2983, 0.274201 )
+transform/scale = Vector2( 2.69081, 1.24946 )
+shape = SubResource( 107 )
+trigger = false
+_update_shape_index = 0
+
+[node name="Path" type="Path2D" parent="Event_01"]
+
+editor/display_folded = true
+transform/pos = Vector2( -4938.21, -608.484 )
+transform/scale = Vector2( 14.2667, 3.05505 )
+curve = SubResource( 108 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="PathFollow" type="PathFollow2D" parent="Event_01/Path"]
+
+transform/pos = Vector2( 350.424, 199.745 )
+offset = 0.0
+h_offset = 0.0
+v_offset = 0.0
+rotate = false
+cubic_interp = true
+loop = false
+lookahead = 4.0
+
+[node name="Event_02" type="Area2D" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 666.659, 106.813 )
+transform/rot = 23.5
+input/pickable = true
+shapes/0/shape = SubResource( 109 )
+shapes/0/transform = Matrix32( 0.75613, 0, 0, 1, 11.8382, -16.5192 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Collision" type="CollisionShape2D" parent="Event_02"]
+
+transform/pos = Vector2( 11.8382, -16.5192 )
+transform/scale = Vector2( 0.75613, 1 )
+shape = SubResource( 109 )
+trigger = false
+_update_shape_index = 0
+
+[node name="Clapet" parent="Event_02" instance=ExtResource( 4 )]
+
+transform/pos = Vector2( -9.23901, 1.78156 )
+
+[node name="Event_03" type="Node2D" parent="."]
+
+editor/display_folded = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Pivot1" parent="Event_03" instance=ExtResource( 5 )]
+
+editor/display_folded = true
+transform/pos = Vector2( 332.997, 124.021 )
+
+[node name="Pivot2" parent="Event_03" instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 441.819, 186.05 )
+
+[node name="Event_04" type="Area2D" parent="."]
+
+editor/display_folded = true
+input/pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Explosion" parent="Event_04" instance=ExtResource( 6 )]
+
+editor/display_folded = true
+transform/pos = Vector2( 641.68, 453.171 )
+
+[node name="Area2D" parent="Event_04/Explosion"]
+
+editor/display_folded = true
+
+[node name="Event_05" type="Node2D" parent="."]
+
+editor/display_folded = true
+
+[node name="Position2D" type="Position2D" parent="Event_05"]
+
+transform/pos = Vector2( 402.225, 200.434 )
+
+[node name="Score" type="Node2D" parent="."]
+
+editor/display_folded = true
+
+[node name="Bounce" type="Area2D" parent="Score"]
+
+editor/display_folded = true
+input/pickable = true
+shapes/0/shape = SubResource( 110 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 136.971, -397.061 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 111 )
+shapes/1/transform = Matrix32( 1, 0, 0, 1, -14.4422, -273.472 )
+shapes/1/trigger = false
+shapes/2/shape = SubResource( 112 )
+shapes/2/transform = Matrix32( 1, 0, 0, 1, 549.75, 191.796 )
+shapes/2/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionPolygon2D14" type="CollisionPolygon2D" parent="Score/Bounce"]
+
+transform/pos = Vector2( 136.971, -397.061 )
+build_mode = 0
+polygon = Vector2Array( 475.884, 543.588, 483.733, 543.896, 485.656, 544.742, 488.503, 546.204, 491.427, 548.205, 493.889, 551.437, 494.89, 554.13, 494.736, 559.208, 493.966, 561.516, 491.658, 564.825, 488.734, 567.21, 484.502, 569.134, 475.269, 569.057, 471.498, 566.979, 468.036, 564.363, 466.112, 562.209, 465.035, 559.67, 465.035, 552.745, 466.343, 550.513, 467.959, 548.821, 470.344, 546.897, 473.499, 544.896 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="CollisionPolygon2D174" type="CollisionPolygon2D" parent="Score/Bounce"]
+
+transform/pos = Vector2( -14.4422, -273.472 )
+build_mode = 0
+polygon = Vector2Array( 474.095, 541.61, 484.842, 541.61, 488.632, 542.685, 491.912, 544.721, 494.571, 547.775, 496.55, 550.717, 497.568, 553.771, 497.284, 562.699, 496.041, 565.253, 493.722, 567.685, 489.706, 570.852, 486.143, 572.662, 472.003, 572.436, 467.138, 569.156, 464.084, 566.724, 462.331, 564.687, 461.256, 562.255, 461.312, 552.244, 462.84, 550.151, 464.706, 547.606, 467.364, 544.947, 471.267, 542.346 )
+shape_range = Vector2( 1, 1 )
+trigger = false
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Score/Bounce"]
+
+transform/pos = Vector2( 549.75, 191.796 )
+build_mode = 0
+polygon = Vector2Array( -6.92285, -14.5843, -10.6343, -12.7285, -12.9539, -11.4527, -15.1575, -9.2491, -17.7092, -6.58151, -18.5211, -3.68198, -18.753, 3.5089, -17.2452, 6.75638, -13.7657, 10.0039, -9.93835, 12.5555, -6.69086, 14.1792, 6.06708, 14.5272, 10.2424, 12.0915, 14.1859, 8.84406, 16.3895, 5.24861, 17.3173, 2.813, 17.0854, -4.1459, 15.5776, -6.92946, 13.374, -9.71303, 9.08264, -12.6126, 5.48718, -14.7002 )
+shape_range = Vector2( 2, 2 )
+trigger = false
+
+[node name="BouncePetit" type="Area2D" parent="Score"]
+
+editor/display_folded = true
+input/pickable = true
+shapes/0/shape = SubResource( 113 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 136.971, -397.061 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 114 )
+shapes/1/transform = Matrix32( 1, 0, 0, 1, -14.4422, -273.472 )
+shapes/1/trigger = false
+shapes/2/shape = SubResource( 115 )
+shapes/2/transform = Matrix32( 1, 0, 0, 1, 1.2118, -400.517 )
+shapes/2/trigger = false
+shapes/3/shape = SubResource( 116 )
+shapes/3/transform = Matrix32( 1, 0, 0, 1, 64.5578, -283.472 )
+shapes/3/trigger = false
+shapes/4/shape = SubResource( 105 )
+shapes/4/transform = Matrix32( 1, 0, 0, 1, 472.637, 559.845 )
+shapes/4/trigger = false
+shapes/5/shape = SubResource( 117 )
+shapes/5/transform = Matrix32( 1, 0, 0, 1, 549.75, 191.796 )
+shapes/5/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionPolygon2D173" type="CollisionPolygon2D" parent="Score/BouncePetit"]
+
+transform/pos = Vector2( 1.2118, -400.517 )
+build_mode = 0
+polygon = Vector2Array( 477.744, 545.567, 483.966, 545.567, 486.059, 546.698, 488.547, 548.282, 490.753, 550.318, 491.998, 553.033, 492.054, 560.782, 491.206, 562.875, 489.452, 565.364, 486.737, 567.117, 484.079, 568.701, 475.765, 568.701, 472.427, 566.438, 469.882, 563.554, 468.77, 561.265, 469.034, 553.372, 471.013, 550.431, 472.823, 548.452, 475.029, 546.359 )
+shape_range = Vector2( 2, 2 )
+trigger = false
+
+[node name="CollisionPolygon2D18" type="CollisionPolygon2D" parent="Score/BouncePetit"]
+
+transform/pos = Vector2( 64.5578, -283.472 )
+build_mode = 0
+polygon = Vector2Array( 474.404, 545.368, 486.014, 545.184, 490.436, 547.626, 493.615, 550.712, 494.536, 553.707, 494.632, 560.662, 492.694, 564.211, 490.114, 566.468, 486.797, 568.726, 474.911, 569.002, 472.101, 567.574, 469.29, 565.777, 467.54, 563.566, 465.881, 559.972, 466.019, 554.72, 467.079, 551.588, 469.751, 548.593 )
+shape_range = Vector2( 3, 3 )
+trigger = false
+
+[node name="Bottom2" type="CollisionShape2D" parent="Score/BouncePetit"]
+
+transform/pos = Vector2( 472.637, 559.845 )
+shape = SubResource( 105 )
+trigger = false
+_update_shape_index = 4
+
+[node name="Passage1" type="Area2D" parent="Score"]
+
+editor/display_folded = true
+transform/pos = Vector2( 353.697, 478.851 )
+transform/rot = 63.1
+input/pickable = true
+shapes/0/shape = SubResource( 118 )
+shapes/0/transform = Matrix32( 1, 0, 0, 0.36524, -0.152252, -2.39374 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Score/Passage1"]
+
+transform/pos = Vector2( -0.152252, -2.39374 )
+transform/scale = Vector2( 1, 0.36524 )
+shape = SubResource( 118 )
+trigger = false
+_update_shape_index = 0
+
+[node name="Passage2" type="Area2D" parent="Score"]
+
+editor/display_folded = true
+transform/pos = Vector2( 353.697, 478.851 )
+transform/rot = 63.1
+input/pickable = true
+shapes/0/shape = SubResource( 118 )
+shapes/0/transform = Matrix32( 0.444635, -0.895712, 0.32715, 0.162399, 98.1485, 208.132 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Score/Passage2"]
+
+transform/pos = Vector2( 98.1485, 208.132 )
+transform/rot = 63.6
+transform/scale = Vector2( 1, 0.36524 )
+shape = SubResource( 118 )
+trigger = false
+_update_shape_index = 0
+
+[node name="Passage3" type="Area2D" parent="Score"]
+
+editor/display_folded = true
+transform/pos = Vector2( 332.697, 251.852 )
+transform/rot = 63.1
+input/pickable = true
+shapes/0/shape = SubResource( 119 )
+shapes/0/transform = Matrix32( -0.877146, -0.480223, 0.175397, -0.320369, 8.35753, -10.4734 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Score/Passage3"]
+
+transform/pos = Vector2( 8.35753, -10.4734 )
+transform/rot = 151.3
+transform/scale = Vector2( 1, 0.36524 )
+shape = SubResource( 119 )
+trigger = false
+_update_shape_index = 0
+
+[node name="Bonus" parent="Score" instance=ExtResource( 7 )]
+
+editor/display_folded = true
+transform/pos = Vector2( 474.998, 497.67 )
+
+[node name="x1" type="Sprite" parent="Score/Bonus"]
+
+transform/pos = Vector2( -27.7279, -3.96115 )
+transform/scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 8 )
+
+[node name="x3" type="Sprite" parent="Score/Bonus"]
+
+visibility/visible = false
+transform/pos = Vector2( -33.8897, -17.605 )
+transform/scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 9 )
+
+[node name="x5" type="Sprite" parent="Score/Bonus"]
+
+visibility/visible = false
+transform/pos = Vector2( -24.2069, -30.8088 )
+transform/scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 10 )
+
+[node name="Special" type="AnimatedSprite" parent="Score/Bonus"]
+
+visibility/visible = false
+transform/pos = Vector2( -173.394, -3.12766 )
+frames = SubResource( 120 )
+animation = "default"
+playing = true
+
+[node name="F" type="Area2D" parent="Score"]
+
+editor/display_folded = true
+transform/pos = Vector2( 430.928, 258.592 )
+input/pickable = true
+shapes/0/shape = SubResource( 121 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, -36, 17 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Score/F"]
+
+transform/pos = Vector2( -52.6011, -4.02956 )
+transform/rot = 69.6
+texture = ExtResource( 13 )
+
+[node name="CollisionPolygon2D1" type="CollisionPolygon2D" parent="Score/F"]
+
+transform/pos = Vector2( -36, 17 )
+build_mode = 0
+polygon = Vector2Array( -25.5614, -16.9578, -20.0294, -14.8489, -17.8899, -14.9406, -15.9339, -15.4296, -13.6721, -16.1631, -11.441, -17.6913, -10.0045, -19.2806, -7.55942, -25.3322 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="Label" type="Label" parent="Score/F"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = -55.0
+margin/top = 5.0
+margin/right = -37.0
+margin/bottom = 37.0
+custom_fonts/font = ExtResource( 14 )
+text = "F"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="L" type="Area2D" parent="Score"]
+
+editor/display_folded = true
+transform/pos = Vector2( 394.969, 275.764 )
+input/pickable = true
+shapes/0/shape = SubResource( 122 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 17.6947, -8.86984 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Score/L"]
+
+transform/pos = Vector2( 1.09338, -29.8824 )
+transform/rot = 69.6
+texture = ExtResource( 13 )
+
+[node name="CollisionPolygon2D 2" type="CollisionPolygon2D" parent="Score/L"]
+
+transform/pos = Vector2( 17.6947, -8.86984 )
+build_mode = 0
+polygon = Vector2Array( -25.5707, -16.8792, -20.0081, -14.8926, -17.7465, -14.9538, -15.6376, -15.5039, -13.5593, -16.2069, -11.3281, -17.8879, -9.95276, -19.3549, -8.57739, -22.2279, -7.62991, -25.2537 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="Label" type="Label" parent="Score/L"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 2.0
+margin/top = -23.0
+margin/right = 20.0
+margin/bottom = 9.0
+custom_fonts/font = ExtResource( 14 )
+text = "L"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Y" type="Area2D" parent="Score"]
+
+editor/display_folded = true
+transform/pos = Vector2( 395.4, 275.564 )
+transform/rot = 1.7
+input/pickable = true
+shapes/0/shape = SubResource( 123 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 35.9585, -17.1724 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Score/Y"]
+
+transform/pos = Vector2( 19.0585, -38.5085 )
+transform/rot = 72.4
+texture = ExtResource( 13 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Score/Y"]
+
+transform/pos = Vector2( 35.9585, -17.1724 )
+build_mode = 0
+polygon = Vector2Array( -25.588, -16.7983, -19.7504, -14.6894, -17.0302, -15.2701, -13.9738, -16.6149, -11.1926, -18.4793, -10.0618, -20.0075, -7.98343, -26.0897 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="Label" type="Label" parent="Score/Y"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 20.0
+margin/top = -32.0
+margin/right = 38.0
+margin/bottom = 0.0
+custom_fonts/font = ExtResource( 14 )
+text = "Y"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="A" type="Area2D" parent="Score"]
+
+editor/display_folded = true
+transform/pos = Vector2( 581.549, 294.401 )
+transform/rot = 1.7
+input/pickable = true
+shapes/0/shape = SubResource( 124 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 35.9585, -17.1724 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Score/A"]
+
+transform/pos = Vector2( 40.9928, -32.4576 )
+transform/rot = -2.9
+texture = ExtResource( 13 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Score/A"]
+
+transform/pos = Vector2( 35.9585, -17.1724 )
+build_mode = 0
+polygon = Vector2Array( -1.56873, -22.2713, -1.95691, -16.9713, -1.25403, -14.718, 0.58429, -11.8152, 4.96069, -8.83713, 7.01447, -8.00638, 10.627, -7.82224 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="Label" type="Label" parent="Score/A"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 20.0
+margin/top = -32.0
+margin/right = 38.0
+margin/bottom = 0.0
+custom_fonts/font = ExtResource( 14 )
+text = "A"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="B" type="Area2D" parent="Score"]
+
+editor/display_folded = true
+transform/pos = Vector2( 594.618, 308.45 )
+transform/rot = 1.7
+input/pickable = true
+shapes/0/shape = SubResource( 124 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 35.9585, -17.1724 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Score/B"]
+
+transform/pos = Vector2( 40.9928, -32.4576 )
+transform/rot = -2.9
+texture = ExtResource( 13 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Score/B"]
+
+transform/pos = Vector2( 35.9585, -17.1724 )
+build_mode = 0
+polygon = Vector2Array( -1.56873, -22.2713, -1.95691, -16.9713, -1.25403, -14.718, 0.58429, -11.8152, 4.96069, -8.83713, 7.01447, -8.00638, 10.627, -7.82224 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="Label" type="Label" parent="Score/B"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 20.0
+margin/top = -32.0
+margin/right = 38.0
+margin/bottom = 0.0
+custom_fonts/font = ExtResource( 14 )
+text = "B"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="C" type="Area2D" parent="Score"]
+
+editor/display_folded = true
+transform/pos = Vector2( 391.161, 54.7611 )
+transform/rot = 1.7
+input/pickable = true
+shapes/0/shape = SubResource( 125 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 34.5944, -17.6725 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Score/C"]
+
+transform/pos = Vector2( 2.62785, -12.0183 )
+transform/rot = 200.5
+transform/scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 13 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Score/C"]
+
+transform/pos = Vector2( 34.5944, -17.6725 )
+build_mode = 0
+polygon = Vector2Array( -39.1866, 2.43935, -35.5694, 1.01463, -32.0579, 1.42527, -29.786, 2.3098, -27.4843, 3.91019, -26.1475, 5.32873, -24.7723, 8.89333 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="Label" type="Label" parent="Score/C"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 20.0
+margin/top = -32.0
+margin/right = 38.0
+margin/bottom = 0.0
+custom_fonts/font = ExtResource( 14 )
+text = "C"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="D1" type="Area2D" parent="Score"]
+
+editor/display_folded = true
+transform/pos = Vector2( 404.734, 65.8794 )
+transform/rot = 1.7
+input/pickable = true
+shapes/0/shape = SubResource( 126 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 34.3485, -17.9862 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Score/D1"]
+
+transform/pos = Vector2( 4.40334, -15.8366 )
+transform/rot = 196.0
+transform/scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 13 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Score/D1"]
+
+transform/pos = Vector2( 34.3485, -17.9862 )
+build_mode = 0
+polygon = Vector2Array( -36.7638, -1.75352, -33.2368, -2.75768, -31.0313, -2.35104, -28.7455, -1.77143, -26.307, -0.590221, -24.4051, 1.42801, -23.2482, 5.55651 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="Label" type="Label" parent="Score/D1"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 20.0
+margin/top = -32.0
+margin/right = 38.0
+margin/bottom = 0.0
+custom_fonts/font = ExtResource( 14 )
+text = "D"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="N" type="Area2D" parent="Score"]
+
+editor/display_folded = true
+transform/pos = Vector2( 466.404, 135.333 )
+input/pickable = true
+shapes/0/shape = SubResource( 127 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 24.0397, -22.2603 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Label" type="Label" parent="Score/N"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 19.0
+margin/top = -33.0
+margin/right = 37.0
+margin/bottom = -1.0
+custom_fonts/font = ExtResource( 14 )
+text = "N"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Score/N"]
+
+transform/pos = Vector2( 24.0397, -22.2603 )
+shape = SubResource( 127 )
+trigger = false
+_update_shape_index = 0
+
+[node name="I" type="Area2D" parent="Score"]
+
+editor/display_folded = true
+transform/pos = Vector2( 493.717, 135.333 )
+input/pickable = true
+shapes/0/shape = SubResource( 128 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 24.0397, -22.2603 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Label" type="Label" parent="Score/I"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 19.0
+margin/top = -33.0
+margin/right = 37.0
+margin/bottom = -1.0
+custom_fonts/font = ExtResource( 14 )
+text = "I"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Score/I"]
+
+transform/pos = Vector2( 24.0397, -22.2603 )
+shape = SubResource( 128 )
+trigger = false
+_update_shape_index = 0
+
+[node name="G" type="Area2D" parent="Score"]
+
+editor/display_folded = true
+transform/pos = Vector2( 520.643, 135.333 )
+input/pickable = true
+shapes/0/shape = SubResource( 129 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 24.0397, -22.2603 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Label" type="Label" parent="Score/G"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 19.0
+margin/top = -33.0
+margin/right = 37.0
+margin/bottom = -1.0
+custom_fonts/font = ExtResource( 14 )
+text = "G"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Score/G"]
+
+transform/pos = Vector2( 24.0397, -22.2603 )
+shape = SubResource( 129 )
+trigger = false
+_update_shape_index = 0
+
+[node name="H" type="Area2D" parent="Score"]
+
+editor/display_folded = true
+transform/pos = Vector2( 547.375, 135.139 )
+input/pickable = true
+shapes/0/shape = SubResource( 130 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 24.0397, -22.2603 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Label" type="Label" parent="Score/H"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 19.0
+margin/top = -33.0
+margin/right = 37.0
+margin/bottom = -1.0
+custom_fonts/font = ExtResource( 14 )
+text = "H"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Score/H"]
+
+transform/pos = Vector2( 24.0397, -22.2603 )
+shape = SubResource( 130 )
+trigger = false
+_update_shape_index = 0
+
+[node name="T" type="Area2D" parent="Score"]
+
+editor/display_folded = true
+transform/pos = Vector2( 574.689, 135.139 )
+input/pickable = true
+shapes/0/shape = SubResource( 131 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 24.0397, -22.2603 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Label" type="Label" parent="Score/T"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 19.0
+margin/top = -33.0
+margin/right = 37.0
+margin/bottom = -1.0
+custom_fonts/font = ExtResource( 14 )
+text = "T"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Score/T"]
+
+transform/pos = Vector2( 24.0397, -22.2603 )
+shape = SubResource( 131 )
+trigger = false
+_update_shape_index = 0
+
+[node name="D2" type="Area2D" parent="Score"]
+
+editor/display_folded = true
+transform/pos = Vector2( 270.74, 401.44 )
+input/pickable = true
+shapes/0/shape = SubResource( 132 )
+shapes/0/transform = Matrix32( 0.942135, 0, 0, 1, 25.278, -22.3992 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="Label" type="Label" parent="Score/D2"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 21.0
+margin/top = -33.0
+margin/right = 39.0
+margin/bottom = -1.0
+custom_fonts/font = ExtResource( 14 )
+text = "D"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Score/D2"]
+
+transform/pos = Vector2( 25.278, -22.3992 )
+transform/scale = Vector2( 0.942135, 1 )
+shape = SubResource( 132 )
+trigger = false
+_update_shape_index = 0
+
+[node name="R" type="Area2D" parent="Score"]
+
+editor/display_folded = true
+transform/pos = Vector2( 287.475, 401.44 )
+input/pickable = true
+shapes/0/shape = SubResource( 133 )
+shapes/0/transform = Matrix32( 0.942135, 0, 0, 1, 25.278, -22.3992 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="Label" type="Label" parent="Score/R"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 21.0
+margin/top = -33.0
+margin/right = 39.0
+margin/bottom = -1.0
+custom_fonts/font = ExtResource( 14 )
+text = "R"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Score/R"]
+
+transform/pos = Vector2( 25.278, -22.3992 )
+transform/scale = Vector2( 0.942135, 1 )
+shape = SubResource( 133 )
+trigger = false
+_update_shape_index = 0
+
+[node name="O" type="Area2D" parent="Score"]
+
+editor/display_folded = true
+transform/pos = Vector2( 306.294, 401.44 )
+input/pickable = true
+shapes/0/shape = SubResource( 134 )
+shapes/0/transform = Matrix32( 0.942135, 0, 0, 1, 25.278, -22.3992 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="Label" type="Label" parent="Score/O"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 21.0
+margin/top = -33.0
+margin/right = 39.0
+margin/bottom = -1.0
+custom_fonts/font = ExtResource( 14 )
+text = "O"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Score/O"]
+
+transform/pos = Vector2( 25.278, -22.3992 )
+transform/scale = Vector2( 0.942135, 1 )
+shape = SubResource( 134 )
+trigger = false
+_update_shape_index = 0
+
+[node name="Block" type="Node2D" parent="Score"]
+
+visibility/visible = false
+transform/pos = Vector2( 408.986, 178.495 )
+
+[node name="Sprite" type="Sprite" parent="Score/Block"]
+
+transform/pos = Vector2( 0.90387, -3.18622 )
+transform/scale = Vector2( 0.543871, 0.527708 )
+texture = ExtResource( 15 )
+
+[node name="P" type="Area2D" parent="Score"]
+
+transform/pos = Vector2( 324.558, 401.44 )
+input/pickable = true
+shapes/0/shape = SubResource( 135 )
+shapes/0/transform = Matrix32( 0.942135, 0, 0, 1, 25.278, -22.3992 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="Label" type="Label" parent="Score/P"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 21.0
+margin/top = -33.0
+margin/right = 39.0
+margin/bottom = -1.0
+custom_fonts/font = ExtResource( 14 )
+text = "P"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Score/P"]
+
+transform/pos = Vector2( 25.278, -22.3992 )
+transform/scale = Vector2( 0.942135, 1 )
+shape = SubResource( 135 )
+trigger = false
+_update_shape_index = 0
+
+[node name="BallPos" type="Position2D" parent="."]
+
+transform/pos = Vector2( 670, 452 )
+
+[node name="Ball" parent="." instance=ExtResource( 16 )]
+
+visibility/visible = false
+transform/pos = Vector2( 670, 474 )
+
+[node name="Launcher" parent="." instance=ExtResource( 17 )]
+
+transform/pos = Vector2( 661.594, 480 )
+
+[node name="cache" type="Sprite" parent="."]
+
+transform/pos = Vector2( 672.965, 585.969 )
+texture = ExtResource( 18 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="FlipperG" parent="." instance=ExtResource( 19 )]
+
+transform/pos = Vector2( 384.71, 511.898 )
+
+[node name="FlipperD" parent="." instance=ExtResource( 20 )]
+
+transform/pos = Vector2( 560.194, 511.635 )
+
+[node name="cacheArriere" type="Sprite" parent="."]
+
+transform/pos = Vector2( 778.553, 504.579 )
+transform/scale = Vector2( 3.70129, 4.36933 )
+texture = ExtResource( 21 )
+
+[node name="Start" type="Sprite" parent="."]
+
+transform/pos = Vector2( 781.316, 464.685 )
+texture = ExtResource( 22 )
+
+[node name="Jeton" type="Sprite" parent="."]
+
+transform/pos = Vector2( 781.301, 530.512 )
+texture = ExtResource( 23 )
+
+[node name="Pause" type="Node2D" parent="."]
+
+editor/display_folded = true
+visibility/visible = false
+z/z = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="PauseBackground" type="Panel" parent="Pause"]
+
+process/pause_mode = 2
+visibility/self_opacity = 0.6
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 960.0
+margin/bottom = 600.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Pause" type="Panel" parent="Pause/PauseBackground"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 300.0
+margin/top = 50.0
+margin/right = 630.0
+margin/bottom = 550.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="L_Pause" type="Label" parent="Pause/PauseBackground/Pause"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 18.0
+margin/right = 329.0
+margin/bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "Pause"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Reprendre" type="Button" parent="Pause/PauseBackground/Pause"]
+
+anchor/left = 3
+anchor/top = 3
+anchor/right = 3
+anchor/bottom = 3
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 99.0
+margin/top = 114.0
+margin/right = -99.0
+margin/bottom = 83.0
+custom_fonts/font = ExtResource( 24 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Reprendre"
+flat = false
+
+[node name="Options" type="Button" parent="Pause/PauseBackground/Pause"]
+
+anchor/left = 3
+anchor/top = 3
+anchor/right = 3
+anchor/bottom = 3
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 99.0
+margin/top = 68.0
+margin/right = -99.0
+margin/bottom = 37.0
+custom_fonts/font = ExtResource( 24 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Options"
+flat = false
+
+[node name="Quitter" type="Button" parent="Pause/PauseBackground/Pause"]
+
+anchor/left = 3
+anchor/top = 3
+anchor/right = 3
+anchor/bottom = 3
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 99.0
+margin/top = -16.0
+margin/right = -99.0
+margin/bottom = -47.0
+custom_fonts/font = ExtResource( 24 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Quitter"
+flat = false
+
+[node name="Options" type="Node2D" parent="."]
+
+process/pause_mode = 2
+visibility/visible = false
+z/z = 1
+script/script = ExtResource( 25 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="OptionsBackground" type="Panel" parent="Options"]
+
+process/pause_mode = 2
+visibility/self_opacity = 0.6
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 960.0
+margin/bottom = 600.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Options" type="Panel" parent="Options/OptionsBackground"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 300.0
+margin/top = 50.0
+margin/right = 630.0
+margin/bottom = 550.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="L_Options" type="Label" parent="Options/OptionsBackground/Options"]
+
+anchor/left = 3
+anchor/right = 3
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 165.0
+margin/top = 18.0
+margin/right = -164.0
+margin/bottom = 72.0
+custom_fonts/font = ExtResource( 3 )
+text = "Options"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="TabContainer" type="TabContainer" parent="Options/OptionsBackground/Options"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 82.0
+margin/right = 330.0
+margin/bottom = 500.0
+tab_align = 0
+tabs_visible = true
+
+[node name="Jeu" type="Tabs" parent="Options/OptionsBackground/Options/TabContainer"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 4.0
+margin/top = 32.0
+margin/right = 4.0
+margin/bottom = 4.0
+custom_fonts/font = ExtResource( 24 )
+
+[node name="VBoxJeu" type="VBoxContainer" parent="Options/OptionsBackground/Options/TabContainer/Jeu"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 5.0
+margin/top = 4.0
+margin/right = 319.0
+margin/bottom = 383.0
+alignment = 0
+
+[node name="L_Paramètres" type="Label" parent="Options/OptionsBackground/Options/TabContainer/Jeu/VBoxJeu"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 314.0
+margin/bottom = 20.0
+custom_fonts/font = ExtResource( 26 )
+text = "Paramètres:"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="style" type="HBoxContainer" parent="Options/OptionsBackground/Options/TabContainer/Jeu/VBoxJeu"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 24.0
+margin/right = 314.0
+margin/bottom = 44.0
+alignment = 0
+
+[node name="style" type="Label" parent="Options/OptionsBackground/Options/TabContainer/Jeu/VBoxJeu/style"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 3.0
+margin/right = 48.0
+margin/bottom = 17.0
+text = "Theme:"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="coloré" type="Button" parent="Options/OptionsBackground/Options/TabContainer/Jeu/VBoxJeu/style"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 2
+margin/left = 52.0
+margin/top = 0.0
+margin/right = 136.0
+margin/bottom = 20.0
+custom_fonts/font = ExtResource( 27 )
+disabled = true
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Coloré"
+flat = false
+
+[node name="noirblanc" type="Button" parent="Options/OptionsBackground/Options/TabContainer/Jeu/VBoxJeu/style"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 2
+margin/left = 140.0
+margin/top = 0.0
+margin/right = 224.0
+margin/bottom = 20.0
+custom_fonts/font = ExtResource( 27 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Noir/Blanc"
+flat = false
+
+[node name="rose" type="Button" parent="Options/OptionsBackground/Options/TabContainer/Jeu/VBoxJeu/style"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 2
+margin/left = 228.0
+margin/top = 0.0
+margin/right = 314.0
+margin/bottom = 20.0
+custom_fonts/font = ExtResource( 27 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Rose"
+flat = false
+
+[node name="HSeparator" type="HSeparator" parent="Options/OptionsBackground/Options/TabContainer/Jeu/VBoxJeu"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 0
+size_flags/vertical = 3
+margin/left = 155.0
+margin/top = 48.0
+margin/right = 159.0
+margin/bottom = 209.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="texture" type="Sprite" parent="Options/OptionsBackground/Options/TabContainer/Jeu/VBoxJeu"]
+
+transform/pos = Vector2( 62.2477, 63.9299 )
+transform/scale = Vector2( 0.200436, 0.200436 )
+texture = ExtResource( 2 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="freeGameScore" type="HBoxContainer" parent="Options/OptionsBackground/Options/TabContainer/Jeu/VBoxJeu"]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 213.0
+margin/right = 314.0
+margin/bottom = 237.0
+alignment = 0
+
+[node name="freeGameScore" type="Label" parent="Options/OptionsBackground/Options/TabContainer/Jeu/VBoxJeu/freeGameScore"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 5.0
+margin/right = 113.0
+margin/bottom = 19.0
+text = "Free Game Score:"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="LineEdit" type="LineEdit" parent="Options/OptionsBackground/Options/TabContainer/Jeu/VBoxJeu/freeGameScore"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 2
+margin/left = 117.0
+margin/top = 0.0
+margin/right = 213.0
+margin/bottom = 24.0
+text = "650000"
+placeholder/alpha = 0.6
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="Value" type="Label" parent="Options/OptionsBackground/Options/TabContainer/Jeu/VBoxJeu/freeGameScore"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 0
+margin/left = 217.0
+margin/top = 5.0
+margin/right = 314.0
+margin/bottom = 19.0
+text = "Valeur: 650000"
+align = 2
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="L_Cheat" type="Label" parent="Options/OptionsBackground/Options/TabContainer/Jeu/VBoxJeu"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 241.0
+margin/right = 314.0
+margin/bottom = 261.0
+custom_fonts/font = ExtResource( 26 )
+text = "Cheats:"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="balls" type="HBoxContainer" parent="Options/OptionsBackground/Options/TabContainer/Jeu/VBoxJeu"]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 265.0
+margin/right = 314.0
+margin/bottom = 289.0
+alignment = 0
+
+[node name="balls" type="Label" parent="Options/OptionsBackground/Options/TabContainer/Jeu/VBoxJeu/balls"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 5.0
+margin/right = 118.0
+margin/bottom = 19.0
+text = "Nombre de balles:"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="SpinBox1" type="SpinBox" parent="Options/OptionsBackground/Options/TabContainer/Jeu/VBoxJeu/balls"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 122.0
+margin/top = 0.0
+margin/right = 196.0
+margin/bottom = 24.0
+range/min = 1.0
+range/max = 100.0
+range/step = 1.0
+range/page = 0.0
+range/value = 5.0
+range/exp_edit = false
+range/rounded = false
+editable = true
+prefix = ""
+suffix = ""
+
+[node name="Value" type="Label" parent="Options/OptionsBackground/Options/TabContainer/Jeu/VBoxJeu/balls"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 0
+margin/left = 200.0
+margin/top = 5.0
+margin/right = 314.0
+margin/bottom = 19.0
+text = "Valeur: 5"
+align = 2
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="credit" type="HBoxContainer" parent="Options/OptionsBackground/Options/TabContainer/Jeu/VBoxJeu"]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 293.0
+margin/right = 314.0
+margin/bottom = 317.0
+alignment = 0
+
+[node name="credit" type="Label" parent="Options/OptionsBackground/Options/TabContainer/Jeu/VBoxJeu/credit"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 5.0
+margin/right = 117.0
+margin/bottom = 19.0
+text = "Nombre de crédit:"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="SpinBox1" type="SpinBox" parent="Options/OptionsBackground/Options/TabContainer/Jeu/VBoxJeu/credit"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 121.0
+margin/top = 0.0
+margin/right = 195.0
+margin/bottom = 24.0
+range/min = 0.0
+range/max = 100.0
+range/step = 1.0
+range/page = 0.0
+range/value = 0.0
+range/exp_edit = false
+range/rounded = false
+editable = true
+prefix = ""
+suffix = ""
+
+[node name="Value" type="Label" parent="Options/OptionsBackground/Options/TabContainer/Jeu/VBoxJeu/credit"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 0
+margin/left = 199.0
+margin/top = 5.0
+margin/right = 314.0
+margin/bottom = 19.0
+text = "Valeur: 0"
+align = 2
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="score" type="HBoxContainer" parent="Options/OptionsBackground/Options/TabContainer/Jeu/VBoxJeu"]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 321.0
+margin/right = 314.0
+margin/bottom = 345.0
+alignment = 0
+
+[node name="score" type="Label" parent="Options/OptionsBackground/Options/TabContainer/Jeu/VBoxJeu/score"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 5.0
+margin/right = 43.0
+margin/bottom = 19.0
+text = "Score: "
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="LineEdit1" type="LineEdit" parent="Options/OptionsBackground/Options/TabContainer/Jeu/VBoxJeu/score"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 2
+margin/left = 47.0
+margin/top = 0.0
+margin/right = 178.0
+margin/bottom = 24.0
+text = "0"
+placeholder/alpha = 0.6
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="Value" type="Label" parent="Options/OptionsBackground/Options/TabContainer/Jeu/VBoxJeu/score"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 0
+margin/left = 182.0
+margin/top = 5.0
+margin/right = 314.0
+margin/bottom = 19.0
+text = "Valeur: 0"
+align = 2
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="HSeparator 3" type="HSeparator" parent="Options/OptionsBackground/Options/TabContainer/Jeu/VBoxJeu"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 349.0
+margin/right = 314.0
+margin/bottom = 352.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Options/OptionsBackground/Options/TabContainer/Jeu/VBoxJeu"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 356.0
+margin/right = 314.0
+margin/bottom = 379.0
+alignment = 0
+
+[node name="Save" type="Button" parent="Options/OptionsBackground/Options/TabContainer/Jeu/VBoxJeu/HBoxContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 155.0
+margin/bottom = 23.0
+custom_fonts/font = ExtResource( 24 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Sauvegarder"
+flat = false
+
+[node name="Load" type="Button" parent="Options/OptionsBackground/Options/TabContainer/Jeu/VBoxJeu/HBoxContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 2
+margin/left = 159.0
+margin/top = 0.0
+margin/right = 314.0
+margin/bottom = 23.0
+custom_fonts/font = ExtResource( 24 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Charger"
+flat = false
+
+[node name="Physiques" type="Tabs" parent="Options/OptionsBackground/Options/TabContainer"]
+
+visibility/visible = false
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 4.0
+margin/top = 32.0
+margin/right = 4.0
+margin/bottom = 4.0
+custom_fonts/font = ExtResource( 24 )
+
+[node name="VBoxPhysiques" type="VBoxContainer" parent="Options/OptionsBackground/Options/TabContainer/Physiques"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 5.0
+margin/top = 4.0
+margin/right = 312.0
+margin/bottom = 383.0
+alignment = 0
+
+[node name="L_Balle" type="Label" parent="Options/OptionsBackground/Options/TabContainer/Physiques/VBoxPhysiques"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 307.0
+margin/bottom = 20.0
+custom_fonts/font = ExtResource( 26 )
+text = "Balle:"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Vitesse" type="HBoxContainer" parent="Options/OptionsBackground/Options/TabContainer/Physiques/VBoxPhysiques"]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 24.0
+margin/right = 307.0
+margin/bottom = 48.0
+alignment = 0
+
+[node name="Vitesse" type="Label" parent="Options/OptionsBackground/Options/TabContainer/Physiques/VBoxPhysiques/Vitesse"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 5.0
+margin/right = 125.0
+margin/bottom = 19.0
+text = "Vitesse de la balle: "
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Gravity" type="SpinBox" parent="Options/OptionsBackground/Options/TabContainer/Physiques/VBoxPhysiques/Vitesse"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 129.0
+margin/top = 0.0
+margin/right = 203.0
+margin/bottom = 24.0
+range/min = 0.0
+range/max = 5.0
+range/step = 0.5
+range/page = 0.0
+range/value = 1.0
+range/exp_edit = false
+range/rounded = false
+editable = true
+prefix = ""
+suffix = ""
+
+[node name="Value" type="Label" parent="Options/OptionsBackground/Options/TabContainer/Physiques/VBoxPhysiques/Vitesse"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 0
+margin/left = 207.0
+margin/top = 5.0
+margin/right = 307.0
+margin/bottom = 19.0
+text = "Valeur: 1"
+align = 2
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="HSeparator" type="HSeparator" parent="Options/OptionsBackground/Options/TabContainer/Physiques/VBoxPhysiques"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 52.0
+margin/right = 307.0
+margin/bottom = 55.0
+
+[node name="L_Tilt" type="Label" parent="Options/OptionsBackground/Options/TabContainer/Physiques/VBoxPhysiques"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 59.0
+margin/right = 307.0
+margin/bottom = 79.0
+custom_fonts/font = ExtResource( 26 )
+text = "Tilt:"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="TiltForce" type="HBoxContainer" parent="Options/OptionsBackground/Options/TabContainer/Physiques/VBoxPhysiques"]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 83.0
+margin/right = 307.0
+margin/bottom = 107.0
+alignment = 0
+
+[node name="TiltForce" type="Label" parent="Options/OptionsBackground/Options/TabContainer/Physiques/VBoxPhysiques/TiltForce"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 5.0
+margin/right = 85.0
+margin/bottom = 19.0
+text = "Force du tilt: "
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="SpinBox" type="SpinBox" parent="Options/OptionsBackground/Options/TabContainer/Physiques/VBoxPhysiques/TiltForce"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 89.0
+margin/top = 0.0
+margin/right = 163.0
+margin/bottom = 24.0
+range/min = 1.0
+range/max = 100.0
+range/step = 1.0
+range/page = 0.0
+range/value = 10.0
+range/exp_edit = false
+range/rounded = false
+editable = true
+prefix = ""
+suffix = ""
+
+[node name="Value" type="Label" parent="Options/OptionsBackground/Options/TabContainer/Physiques/VBoxPhysiques/TiltForce"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 0
+margin/left = 167.0
+margin/top = 5.0
+margin/right = 307.0
+margin/bottom = 19.0
+text = "Valeur: 1"
+align = 2
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="TiltProba" type="HBoxContainer" parent="Options/OptionsBackground/Options/TabContainer/Physiques/VBoxPhysiques"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 111.0
+margin/right = 307.0
+margin/bottom = 135.0
+alignment = 0
+
+[node name="TiltProba" type="Label" parent="Options/OptionsBackground/Options/TabContainer/Physiques/VBoxPhysiques/TiltProba"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 5.0
+margin/right = 117.0
+margin/bottom = 19.0
+text = "Sensibilité du tilt: "
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="SpinBox" type="SpinBox" parent="Options/OptionsBackground/Options/TabContainer/Physiques/VBoxPhysiques/TiltProba"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 121.0
+margin/top = 0.0
+margin/right = 195.0
+margin/bottom = 24.0
+range/min = 0.0
+range/max = 1.0
+range/step = 0.05
+range/page = 0.0
+range/value = 0.42
+range/exp_edit = false
+range/rounded = false
+editable = true
+prefix = ""
+suffix = ""
+
+[node name="Value" type="Label" parent="Options/OptionsBackground/Options/TabContainer/Physiques/VBoxPhysiques/TiltProba"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 0
+margin/left = 199.0
+margin/top = 5.0
+margin/right = 307.0
+margin/bottom = 19.0
+text = "Valeur: 0.42"
+align = 2
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="HSeparator 2" type="HSeparator" parent="Options/OptionsBackground/Options/TabContainer/Physiques/VBoxPhysiques"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 139.0
+margin/right = 307.0
+margin/bottom = 142.0
+
+[node name="L_Flipper" type="Label" parent="Options/OptionsBackground/Options/TabContainer/Physiques/VBoxPhysiques"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 146.0
+margin/right = 307.0
+margin/bottom = 166.0
+custom_fonts/font = ExtResource( 26 )
+text = "Flippers:"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="maxRot" type="HBoxContainer" parent="Options/OptionsBackground/Options/TabContainer/Physiques/VBoxPhysiques"]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 170.0
+margin/right = 307.0
+margin/bottom = 194.0
+alignment = 0
+
+[node name="maxRot" type="Label" parent="Options/OptionsBackground/Options/TabContainer/Physiques/VBoxPhysiques/maxRot"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 5.0
+margin/right = 113.0
+margin/bottom = 19.0
+text = "Angle maximum: "
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="SpinBox" type="SpinBox" parent="Options/OptionsBackground/Options/TabContainer/Physiques/VBoxPhysiques/maxRot"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 117.0
+margin/top = 0.0
+margin/right = 191.0
+margin/bottom = 24.0
+range/min = 0.0
+range/max = 1.3
+range/step = 0.1
+range/page = 0.0
+range/value = 0.5
+range/exp_edit = false
+range/rounded = false
+editable = true
+prefix = ""
+suffix = ""
+
+[node name="Value" type="Label" parent="Options/OptionsBackground/Options/TabContainer/Physiques/VBoxPhysiques/maxRot"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 0
+margin/left = 195.0
+margin/top = 5.0
+margin/right = 307.0
+margin/bottom = 19.0
+text = "Valeur: 0.5"
+align = 2
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="speedRot" type="HBoxContainer" parent="Options/OptionsBackground/Options/TabContainer/Physiques/VBoxPhysiques"]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 198.0
+margin/right = 307.0
+margin/bottom = 222.0
+alignment = 0
+
+[node name="speedRot" type="Label" parent="Options/OptionsBackground/Options/TabContainer/Physiques/VBoxPhysiques/speedRot"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 5.0
+margin/right = 129.0
+margin/bottom = 19.0
+text = "Vitesse de rotation: "
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="SpinBox" type="SpinBox" parent="Options/OptionsBackground/Options/TabContainer/Physiques/VBoxPhysiques/speedRot"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 133.0
+margin/top = 0.0
+margin/right = 207.0
+margin/bottom = 24.0
+range/min = 0.0
+range/max = 1.0
+range/step = 0.01
+range/page = 0.0
+range/value = 0.12
+range/exp_edit = false
+range/rounded = false
+editable = true
+prefix = ""
+suffix = ""
+
+[node name="Value" type="Label" parent="Options/OptionsBackground/Options/TabContainer/Physiques/VBoxPhysiques/speedRot"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 0
+margin/left = 211.0
+margin/top = 5.0
+margin/right = 307.0
+margin/bottom = 19.0
+text = "Valeur: 0.12"
+align = 2
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Preset" type="Tabs" parent="Options/OptionsBackground/Options/TabContainer"]
+
+editor/display_folded = true
+visibility/visible = false
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 4.0
+margin/top = 32.0
+margin/right = 4.0
+margin/bottom = 4.0
+custom_fonts/font = ExtResource( 24 )
+
+[node name="VBoxPreset" type="VBoxContainer" parent="Options/OptionsBackground/Options/TabContainer/Preset"]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 5.0
+margin/top = 4.0
+margin/right = 312.0
+margin/bottom = 383.0
+alignment = 0
+
+[node name="L_Difficultés" type="Label" parent="Options/OptionsBackground/Options/TabContainer/Preset/VBoxPreset"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 307.0
+margin/bottom = 20.0
+custom_fonts/font = ExtResource( 26 )
+text = "Difficultés:"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="HSeparator4" type="HSeparator" parent="Options/OptionsBackground/Options/TabContainer/Preset/VBoxPreset"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 24.0
+margin/right = 307.0
+margin/bottom = 27.0
+
+[node name="L_Current" type="Label" parent="Options/OptionsBackground/Options/TabContainer/Preset/VBoxPreset"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 31.0
+margin/right = 307.0
+margin/bottom = 48.0
+custom_fonts/font = ExtResource( 24 )
+text = "Activé: Custom"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="HSeparator3" type="HSeparator" parent="Options/OptionsBackground/Options/TabContainer/Preset/VBoxPreset"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 52.0
+margin/right = 307.0
+margin/bottom = 55.0
+
+[node name="Difficultés" type="HBoxContainer" parent="Options/OptionsBackground/Options/TabContainer/Preset/VBoxPreset"]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 59.0
+margin/right = 307.0
+margin/bottom = 82.0
+alignment = 0
+
+[node name="Facile" type="Button" parent="Options/OptionsBackground/Options/TabContainer/Preset/VBoxPreset/Difficultés"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 99.0
+margin/bottom = 23.0
+custom_fonts/font = ExtResource( 24 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Facile"
+flat = false
+
+[node name="Moyen" type="Button" parent="Options/OptionsBackground/Options/TabContainer/Preset/VBoxPreset/Difficultés"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 2
+margin/left = 103.0
+margin/top = 0.0
+margin/right = 202.0
+margin/bottom = 23.0
+custom_fonts/font = ExtResource( 24 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Moyen"
+flat = false
+
+[node name="Difficile" type="Button" parent="Options/OptionsBackground/Options/TabContainer/Preset/VBoxPreset/Difficultés"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 2
+margin/left = 206.0
+margin/top = 0.0
+margin/right = 307.0
+margin/bottom = 23.0
+custom_fonts/font = ExtResource( 24 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Difficile"
+flat = false
+
+[node name="Close" type="Button" parent="Options/OptionsBackground/Options"]
+
+anchor/left = 1
+anchor/right = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 31.0
+margin/top = 4.0
+margin/right = 5.0
+margin/bottom = 35.0
+custom_fonts/font = ExtResource( 28 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "X"
+flat = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[connection signal="body_enter" from="Event_01" to="." method="_on_Event_01_body_enter"]
+
+[connection signal="body_enter" from="Event_02" to="." method="_on_Event_02_body_enter"]
+
+[connection signal="body_enter" from="Event_03/Pivot1/Area2D" to="." method="_on_Event_03_01_body_enter"]
+
+[connection signal="body_enter" from="Event_03/Pivot2/Area2D" to="." method="_on_Event_03_02_body_enter"]
+
+[connection signal="body_enter" from="Event_04/Explosion/Area2D" to="." method="_on_Event_04_body_enter"]
+
+[connection signal="body_exit" from="Score/Bounce" to="." method="_on_Bounce_body_exit"]
+
+[connection signal="body_exit" from="Score/BouncePetit" to="." method="_on_BouncePetit_body_exit"]
+
+[connection signal="body_enter" from="Score/Passage1" to="." method="_on_Passage1_body_enter"]
+
+[connection signal="body_enter" from="Score/Passage2" to="." method="_on_Passage1_body_enter"]
+
+[connection signal="body_enter" from="Score/Passage3" to="." method="_on_Passage3_body_enter"]
+
+[connection signal="body_exit" from="Score/F" to="." method="_on_F_body_exit"]
+
+[connection signal="body_exit" from="Score/L" to="." method="_on_L_body_exit"]
+
+[connection signal="body_exit" from="Score/Y" to="." method="_on_Y_body_exit"]
+
+[connection signal="body_exit" from="Score/A" to="." method="_on_A_body_exit"]
+
+[connection signal="body_exit" from="Score/B" to="." method="_on_B_body_exit"]
+
+[connection signal="body_exit" from="Score/C" to="." method="_on_C_body_exit"]
+
+[connection signal="body_exit" from="Score/D1" to="." method="_on_D1_body_exit"]
+
+[connection signal="body_enter" from="Score/N" to="." method="_on_N_body_enter"]
+
+[connection signal="body_enter" from="Score/I" to="." method="_on_I_body_enter"]
+
+[connection signal="body_enter" from="Score/G" to="." method="_on_G_body_enter"]
+
+[connection signal="body_enter" from="Score/H" to="." method="_on_H_body_enter"]
+
+[connection signal="body_enter" from="Score/T" to="." method="_on_T_body_enter"]
+
+[connection signal="body_enter" from="Score/D2" to="." method="_on_D2_body_enter"]
+
+[connection signal="body_enter" from="Score/R" to="." method="_on_R_body_enter"]
+
+[connection signal="body_enter" from="Score/O" to="." method="_on_O_body_enter"]
+
+[connection signal="body_enter" from="Score/P" to="." method="_on_P_body_enter"]
+
+[connection signal="button_down" from="Pause/PauseBackground/Pause/Reprendre" to="." method="_on_Reprendre_button_down"]
+
+[connection signal="button_down" from="Pause/PauseBackground/Pause/Options" to="." method="_on_Options_button_down"]
+
+[connection signal="button_down" from="Pause/PauseBackground/Pause/Quitter" to="." method="_on_Quitter_button_down"]
+
+[connection signal="button_up" from="Options/OptionsBackground/Options/TabContainer/Jeu/VBoxJeu/style/coloré" to="Options" method="_on_color_button_up"]
+
+[connection signal="button_up" from="Options/OptionsBackground/Options/TabContainer/Jeu/VBoxJeu/style/noirblanc" to="Options" method="_on_noirblanc_button_up"]
+
+[connection signal="button_up" from="Options/OptionsBackground/Options/TabContainer/Jeu/VBoxJeu/style/rose" to="Options" method="_on_rose_button_up"]
+
+[connection signal="text_changed" from="Options/OptionsBackground/Options/TabContainer/Jeu/VBoxJeu/freeGameScore/LineEdit" to="Options" method="_on_LineEdit_text_changed"]
+
+[connection signal="value_changed" from="Options/OptionsBackground/Options/TabContainer/Jeu/VBoxJeu/balls/SpinBox1" to="Options" method="_on_balls_value_changed"]
+
+[connection signal="value_changed" from="Options/OptionsBackground/Options/TabContainer/Jeu/VBoxJeu/credit/SpinBox1" to="Options" method="_on_credit_value_changed"]
+
+[connection signal="text_changed" from="Options/OptionsBackground/Options/TabContainer/Jeu/VBoxJeu/score/LineEdit1" to="Options" method="_on_Score_text_changed"]
+
+[connection signal="button_up" from="Options/OptionsBackground/Options/TabContainer/Jeu/VBoxJeu/HBoxContainer/Save" to="Options" method="_on_Save_button_up"]
+
+[connection signal="button_up" from="Options/OptionsBackground/Options/TabContainer/Jeu/VBoxJeu/HBoxContainer/Load" to="Options" method="_on_Load_button_up"]
+
+[connection signal="value_changed" from="Options/OptionsBackground/Options/TabContainer/Physiques/VBoxPhysiques/Vitesse/Gravity" to="Options" method="_on_Gravity_value_changed"]
+
+[connection signal="value_changed" from="Options/OptionsBackground/Options/TabContainer/Physiques/VBoxPhysiques/TiltForce/SpinBox" to="Options" method="_on_TiltForce_value_changed"]
+
+[connection signal="value_changed" from="Options/OptionsBackground/Options/TabContainer/Physiques/VBoxPhysiques/TiltProba/SpinBox" to="Options" method="_on_TiltProba_value_changed"]
+
+[connection signal="value_changed" from="Options/OptionsBackground/Options/TabContainer/Physiques/VBoxPhysiques/maxRot/SpinBox" to="Options" method="_on_maxRot_value_changed"]
+
+[connection signal="value_changed" from="Options/OptionsBackground/Options/TabContainer/Physiques/VBoxPhysiques/speedRot/SpinBox" to="Options" method="_on_speedRot_value_changed"]
+
+[connection signal="button_up" from="Options/OptionsBackground/Options/TabContainer/Preset/VBoxPreset/Difficultés/Facile" to="Options" method="_on_Facile_button_down"]
+
+[connection signal="button_up" from="Options/OptionsBackground/Options/TabContainer/Preset/VBoxPreset/Difficultés/Moyen" to="Options" method="_on_Moyen_button_down"]
+
+[connection signal="button_up" from="Options/OptionsBackground/Options/TabContainer/Preset/VBoxPreset/Difficultés/Difficile" to="Options" method="_on_Difficile_button_down"]
+
+[connection signal="button_down" from="Options/OptionsBackground/Options/Close" to="Options" method="_on_Close_button_down"]
+
+
+[editable path="Event_03/Pivot1"]
+[editable path="Event_03/Pivot2"]
+[editable path="Event_04/Explosion"]
+[editable path="Score/Bonus"]

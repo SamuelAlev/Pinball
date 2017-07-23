@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=1]
+
+[ext_resource path="res://scripts/Bonus.gd" type="Script" id=1]
+[ext_resource path="res://media/bomb.wav" type="Sample" id=2]
+
+[sub_resource type="SampleLibrary" id=1]
+
+samples/bomb = {
+"db": 0.0,
+"pitch": 1.0,
+"priority": 0,
+"sample": ExtResource( 2 )
+}
+
+[node name="Bonus" type="Node2D"]
+
+script/script = ExtResource( 1 )
+
+[node name="bonusSprite" type="Node2D" parent="."]
+
+[node name="SamplePlayer2D" type="SamplePlayer2D" parent="."]
+
+params/volume_db = 0.0
+params/pitch_scale = 1.0
+params/attenuation/min_distance = 1.0
+params/attenuation/max_distance = 2048.0
+params/attenuation/distance_exp = 1.0
+config/polyphony = 1
+config/samples = SubResource( 1 )
+config/pitch_random = 0.0
+
+

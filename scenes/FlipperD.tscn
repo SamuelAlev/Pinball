@@ -1,0 +1,81 @@
+[gd_scene load_steps=7 format=1]
+
+[ext_resource path="res://scripts/FlipperD.gd" type="Script" id=1]
+[ext_resource path="res://elements/flipperD.tex" type="Texture" id=2]
+[ext_resource path="res://media/paddle.wav" type="Sample" id=3]
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -48.4505, 37.1253, -52.026, 38.3629, -55.8546, 38.0566, -57.9475, 36.8825, -60.0404, 35.0959, -61.0613, 32.8498, -61.2145, 28.9703, -60.1935, 27.0815, -58.0496, 25.0907, -49.2695, 20.0881, -42.9907, 34.8917 )
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 0.399158, 11.3591, 0.143921, 13.6562, -0.928066, 16.2596, -3.02099, 18.8119, -4.75658, 20.7517, -7.00265, 22.13, -42.9907, 34.8917, -49.2695, 20.0881, -37.9881, 13.1457, -24.767, 5.02926, -16.089, 0.230848, -11.3927, -0.585902, -6.90055, 0.0266609, -3.93983, 1.96644, -2.00005, 4.00832, -0.877014, 5.9481, 0.0418282, 8.04103 )
+
+[sub_resource type="SampleLibrary" id=3]
+
+samples/paddle = {
+"db": 0.0,
+"pitch": 1.0,
+"priority": 0,
+"sample": ExtResource( 3 )
+}
+
+[node name="FlipperD" type="RigidBody2D"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 2 )
+shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/1/trigger = false
+collision/layers = 1
+collision/mask = 1
+mode = 3
+mass = 1.0
+friction = 0.2
+bounce = 0.1
+gravity_scale = 0.0
+custom_integrator = false
+continuous_cd = 0
+contacts_reported = 0
+contact_monitor = false
+sleeping = false
+can_sleep = false
+velocity/linear = Vector2( 0, 0 )
+velocity/angular = 0.0
+damp_override/linear = 0.0
+damp_override/angular = 0.0
+script/script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+
+transform/pos = Vector2( -61, 0 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="Collision" type="CollisionPolygon2D" parent="."]
+
+build_mode = 0
+polygon = Vector2Array( -16.089, 0.230848, -24.767, 5.02926, -37.9881, 13.1457, -49.2695, 20.0881, -58.0496, 25.0907, -60.1935, 27.0815, -61.2145, 28.9703, -61.0613, 32.8498, -60.0404, 35.0959, -57.9475, 36.8825, -55.8546, 38.0566, -52.026, 38.3629, -48.4505, 37.1253, -42.9907, 34.8917, -7.00265, 22.13, -4.75658, 20.7517, -3.02099, 18.8119, -0.928066, 16.2596, 0.143921, 13.6562, 0.399158, 11.3591, 0.0418282, 8.04103, -0.877014, 5.9481, -2.00005, 4.00832, -3.93983, 1.96644, -6.90055, 0.0266609, -11.3927, -0.585902 )
+shape_range = Vector2( 0, 1 )
+trigger = false
+
+[node name="SamplePlayer" type="SamplePlayer2D" parent="."]
+
+params/volume_db = 0.0
+params/pitch_scale = 1.0
+params/attenuation/min_distance = 1.0
+params/attenuation/max_distance = 2048.0
+params/attenuation/distance_exp = 1.0
+config/polyphony = 1
+config/samples = SubResource( 3 )
+config/pitch_random = 0.0
+
+

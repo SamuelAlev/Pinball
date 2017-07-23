@@ -1,0 +1,88 @@
+[gd_scene load_steps=8 format=1]
+
+[ext_resource path="res://scripts/FlipperG.gd" type="Script" id=1]
+[ext_resource path="res://elements/flipperG.tex" type="Texture" id=2]
+[ext_resource path="res://media/paddle.wav" type="Sample" id=3]
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 39.4069, 14.2777, 54.8293, 23.5086, 59.5949, 26.6982, 60.9833, 29.0247, 61.335, 32.1343, 60.9833, 34.3531, 59.4448, 36.3044, 57.5311, 37.8053, 54.4681, 38.4009, 51.6773, 37.9929, 47.0243, 36.4545, 23.5717, 27.974, 30.4762, 8.98679 )
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 30.4762, 8.98679, 23.5717, 27.974, 5.42195, 21.5285, 24.2097, 5.04675 )
+
+[sub_resource type="ConvexPolygonShape2D" id=3]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -0.706375, 8.91174, 0.41935, 6.13495, 1.95784, 4.1837, 4.43443, 1.51948, 5.6352, 0.581381, 7.24874, 0.0560436, 10.5509, -0.169101, 14.1589, -0.274249, 17.2302, 0.543857, 20.0445, 2.30749, 24.2097, 5.04675, 5.42195, 21.5285, 3.42128, 19.8688, 1.69517, 18.2552, 0.757067, 16.1164, -0.0684643, 13.7899, -0.781422, 11.3133 )
+
+[sub_resource type="SampleLibrary" id=4]
+
+samples/paddle = {
+"db": 0.0,
+"pitch": 1.0,
+"priority": 0,
+"sample": ExtResource( 3 )
+}
+
+[node name="FlipperG" type="RigidBody2D"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 2 )
+shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/1/trigger = false
+shapes/2/shape = SubResource( 3 )
+shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/2/trigger = false
+collision/layers = 1
+collision/mask = 1
+mode = 3
+mass = 1.0
+friction = 0.2
+bounce = 0.1
+gravity_scale = 0.0
+custom_integrator = false
+continuous_cd = 0
+contacts_reported = 0
+contact_monitor = false
+sleeping = false
+can_sleep = false
+velocity/linear = Vector2( 0, 0 )
+velocity/angular = 0.0
+damp_override/linear = 0.0
+damp_override/angular = 0.0
+script/script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+
+texture = ExtResource( 2 )
+centered = false
+
+[node name="Collision" type="CollisionPolygon2D" parent="."]
+
+build_mode = 0
+polygon = Vector2Array( 4.43443, 1.51948, 5.6352, 0.581381, 7.24874, 0.0560436, 10.5509, -0.169101, 14.1589, -0.274249, 17.2302, 0.543857, 20.0445, 2.30749, 24.2097, 5.04675, 30.4762, 8.98679, 39.4069, 14.2777, 54.8293, 23.5086, 59.5949, 26.6982, 60.9833, 29.0247, 61.335, 32.1343, 60.9833, 34.3531, 59.4448, 36.3044, 57.5311, 37.8053, 54.4681, 38.4009, 51.6773, 37.9929, 47.0243, 36.4545, 23.5717, 27.974, 5.42195, 21.5285, 3.42128, 19.8688, 1.69517, 18.2552, 0.757067, 16.1164, -0.0684643, 13.7899, -0.781422, 11.3133, -0.706375, 8.91174, 0.41935, 6.13495, 1.95784, 4.1837 )
+shape_range = Vector2( 0, 2 )
+trigger = false
+
+[node name="SamplePlayer" type="SamplePlayer2D" parent="."]
+
+params/volume_db = 0.0
+params/pitch_scale = 1.0
+params/attenuation/min_distance = 1.0
+params/attenuation/max_distance = 2048.0
+params/attenuation/distance_exp = 1.0
+config/polyphony = 1
+config/samples = SubResource( 4 )
+config/pitch_random = 0.0
+
+

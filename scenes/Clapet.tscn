@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=1]
+
+[ext_resource path="res://elements/clapet.png" type="Texture" id=1]
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 0.0177059, 0.0710545, -1.61176, -4.19063, 7.85169, -25.8124, 11.988, -27.2539, 13.4922, -23.4936, 3.84069, -1.3704 )
+
+[node name="Clapet" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+
+transform/rot = 21.5
+texture = ExtResource( 1 )
+offset = Vector2( 10.5, -10.5 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="Collision" type="CollisionPolygon2D" parent="StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( 0.0177059, 0.0710545, -1.61176, -4.19063, 7.85169, -25.8124, 11.988, -27.2539, 13.4922, -23.4936, 3.84069, -1.3704 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+
